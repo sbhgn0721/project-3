@@ -3,7 +3,7 @@ const rewardsController = require("../../controllers/rewardsController");
 
 router.route("/")
 .get(rewardsController.findAll)
-.post(rewardsController.create);
+.post(rewardsController.create)
 
 router.route("/:id")
 .get(rewardsController.findById)
@@ -11,6 +11,13 @@ router.route("/:id")
 .delete(rewardsController.remove);
 
 router.route("/level/:level")
-.get(rewardsController.getLevel);
+.get(rewardsController.getLevelChore)
+.put(rewardsController.update)
+.delete(rewardsController.remove)
+.post(rewardsController.create)
+
+
+
+
 
 module.exports = router;
