@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "react-router-dom": "^5.0.1"
+  },
+  "devDependencies": {
+    "install-peers": "^1.0.3"
   }
 }
