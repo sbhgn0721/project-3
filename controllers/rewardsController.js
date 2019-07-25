@@ -1,15 +1,11 @@
 const db = require("../models");
 
 module.exports = {
-  getLevel: function(req, res){
-    db.Reward
-      .findOne({ level: req.params.level })
-      .populate({ path: 'chore', model: Chore })
-      .then(dbModel => {
-          console.log(dbModel.chores[0]);
-          res.json(dbModel);
-        })
-      .catch(err => res.status(422).json(err));
+  getLevelChore : function (req, res){
+    db.Reward.find({level: req.params.level})
+    .populate("chores")
+    .then(dbModel => res.json(dbModel))
+    .catch(err => res.status(422).json(err));
   },
   findAll: function(req, res) {
     db.Reward
@@ -31,8 +27,9 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
+    console.log(req.params.level.toString());
     db.Reward
-      .findOneAndUpdate({ _id: req.params.id }, req.body)
+      .findOneAndUpdate({ level: req.params.level }, req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

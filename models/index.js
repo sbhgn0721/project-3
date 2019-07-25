@@ -1,4 +1,4 @@
 module.exports = {
-    Reward: require("./chores"),
+    Chore: require("./chores"),
     Reward: require("./rewards")
 };
