@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Login from "./pages/Login";
 import Parent from "./pages/Parent";
 import ChoreList from "./pages/ChoreList";
 import RewardList from "./pages/RewardList";
 import NoMatch from "./pages/NoMatch";
-import NavTabs from "./components/NavTabs/NavTabs";
-import LogForm from "./components/LogForm";
+//import LogForm from "./components/LogForm";
 //import Header from "./components/Header";
 //import Wallpaper from "./components/Wallpaper";
 import './App.css';
@@ -18,10 +18,9 @@ class App extends React.Component {
       <Router>
 
         <div>
-          <NavTabs />
          
           <Switch>
-            <Route exact path="/" componet={LogForm}/>          
+            <Route exact path="/" component={Login}/>          
             <Route exact path="/parent" component={Parent} />         
             <Route exact path="/parent/chores" component={ChoreList} />
             <Route exact path="/parent/chores/:id" component={ChoreList} />
