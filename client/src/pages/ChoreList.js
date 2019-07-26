@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import NavTabs from "../components/NavTabs/NavTabs";
 import AddChore from "../components/AddChore/AddChore";
 import ChoreTable from "../components/ChoreTable/ChoreTable"
 import API from "../utils/API";
@@ -56,6 +57,7 @@ class ChoreList extends Component {
     render() {
         return(
             <div>
+                <NavTabs />
                 <AddChore 
                 handleChoreNameChange = {this.handleChoreNameChange}
                 handleLevelChange={this.handleLevelChange}
