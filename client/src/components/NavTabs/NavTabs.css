@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #352066;
+   
+}
+
+
+.navbar li{
+    display: inline-block;
+    color: white;
+    padding-top: 4%;
+    
+   
+}
+
+
+#search {
+    padding-left: 150px;
+    
+    
+}
+
+#saved {
+    padding-left: 200px;
+    
+}
