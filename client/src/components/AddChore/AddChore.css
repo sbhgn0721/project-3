@@ -1,0 +1,16 @@
+li {display: inline-block;
+color: white;
+padding-top: 4%;
+margin-top: 60px;
+margin-left: 20px;
+
+}
+
+#save-button {
+ margin-left: 700px;
+}
+
+#addChoreForm {
+    width: 40%;
+    margin-left: 20px;
+}
