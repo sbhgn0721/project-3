@@ -8,9 +8,7 @@ const AddChore = props => {
             <ul>
 
 
-                <li><button type="submit" className="btn btn-warning" id="save-button" onClick={props.handleSaveChore}>Save</button></li>
-                <li><button type="submit" className="btn btn-info" onClick={props.handleAddChore}>Add</button></li>
-                <li><button type="submit" className="btn btn-dark" onClick={props.handleCancelAdd}>Cancel</button></li>
+                <li><button type="submit" className="btn btn-warning" id="save-button" onClick={props.handleSaveChore}>Save Chore</button></li>
 
             </ul>
 
