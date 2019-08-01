@@ -7,7 +7,7 @@ router.route("/")
 
 router.route("/:id")
 .get(rewardsController.findById)
-.put(rewardsController.update)
+.put(rewardsController.updateById)
 .delete(rewardsController.remove);
 
 router.route("/level/:level")

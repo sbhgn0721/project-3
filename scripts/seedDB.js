@@ -6,17 +6,18 @@ mongoose.connect(
     "mongodb://localhost/monkeySeeMonkey2Dodb"
 );
 
+/*
 const choreSeed =
-    [{
-        choreName: "brush your teeth",
+   [{
+        choreName: "",
         level: "1",
         dueDate: Date.now,
         completion: false
     }];
 
-db.Reward
+db.Chore
     .remove({})
-    .then(() => db.Reward.collection.insertMany(choreSeed))
+    .then(() => db.Chore.collection.insertMany(choreSeed))
     .then(data => {
         console.log(data.result.n + " records inserted!");
         process.exit(0);
@@ -25,12 +26,24 @@ db.Reward
         console.error(err);
         process.exit(1);
     });
+    */
+    
+
+    
 
 const rewardSeed =
     [{
-        rewardName: "watch Lion King",
+        rewardName: "",
         level: "1"
 
+    },
+    {
+        rewardName: "",
+        level: "2"
+    },
+    {
+        rewardName: "",
+        level: "3"
     }];
 
 db.Reward
@@ -44,7 +57,6 @@ db.Reward
         console.error(err);
         process.exit(1);
     });
-
 
 
 
