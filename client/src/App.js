@@ -8,6 +8,7 @@ import Parent from "./pages/Parent";
 import ChoreList from "./pages/ChoreList";
 import RewardList from "./pages/RewardList";
 import NoMatch from "./pages/NoMatch";
+import Role from "./pages/Role";
 //import LogForm from "./components/LogForm";
 //import Header from "./components/Header";
 //import Wallpaper from "./components/Wallpaper";
@@ -47,6 +48,7 @@ class App extends Component {
 
           <Switch>
             <Route exact path="/" component={Welcome} />
+            <SecuredRoute exact path="/role" component={Role} checkingSession={this.state.checkingSession}/>
             <SecuredRoute exact path="/parent" component={Parent} checkingSession={this.state.checkingSession}/>
             <SecuredRoute exact path="/parent/chores" component={ChoreList} checkingSession={this.state.checkingSession}/>
             <SecuredRoute exact path="/parent/chores/:id" component={ChoreList} checkingSession={this.state.checkingSession}/>
