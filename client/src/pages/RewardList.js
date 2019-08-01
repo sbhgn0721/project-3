@@ -120,7 +120,6 @@ class RewardList extends Component{
         console.log("what is event",event.target);
         const itemName = event.target.name;
         const isChecked = event.target.checked;
-        const unChecked = !event.target.checked;
         const id = event.target.id;
         const level = event.target.getAttribute('level');
         const dueDate = event.target.getAttribute('duedate');
@@ -135,7 +134,7 @@ class RewardList extends Component{
         }
 
         API.updateChore(chore)
-        .then(this.setState({message:alert("Good job!")}))
+       // .then(this.setState({message:alert("Good job!")}))
         .then(res => this.componentDidMount())
         .catch(err =>console.log(err))
         
