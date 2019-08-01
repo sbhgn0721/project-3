@@ -55,7 +55,7 @@ class App extends Component {
             <Route exact path='/callback' component={Callback} />
             <Route component={NoMatch} />
           </Switch>
-›
+
         </div>
     );
   }
