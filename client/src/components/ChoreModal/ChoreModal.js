@@ -35,7 +35,7 @@ const ChoreModal = props => {
                                 <div className="form-group">
                                     <label htmlFor="dueDate">Due Date</label>
                                     <input type="date" className="form-control" id="dueDate" placeholder="07/26/2019"
-                                        value={Moment(props.modalDueDate).format('YYYY-MM-DD')}
+                                        value={Moment(props.modalDueDate).utc().format('YYYY-MM-DD')}
                                         name="dueDate"
                                         onChange={props.handleModalDueDateChange}
                                     />
