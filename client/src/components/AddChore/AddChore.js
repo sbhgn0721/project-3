@@ -9,6 +9,8 @@ const AddChore = props => {
 
 
                 <li><button type="submit" className="btn btn-warning" id="save-button" onClick={props.handleSaveChore}>Save Chore</button></li>
+                <li><a href="/parent/rewards"><button type="submit" className="btn btn-success" id="reward-list-button">Reward List</button></a></li>
+
 
             </ul>
 

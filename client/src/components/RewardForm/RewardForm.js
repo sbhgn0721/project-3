@@ -5,6 +5,8 @@ import Moment from 'moment';
 const RewardForm = props => {
     return (
         <div>
+            <a href="/parent/chores"><button type="submit" className="btn btn-success" id="chore-list-button">Chore List</button></a>
+
             <form id="rewardForm">
                 <div className="form-group form-row">
                     <div className="col-auto">
@@ -63,7 +65,7 @@ const RewardForm = props => {
                             <input type="checkbox" className="choreCheckListCheckBox" aria-label="Checkbox for following text input" 
                             checked={item.completion} name={item.choreName} level={item.level} duedate={item.dueDate} id={item._id} onChange={props.handleCheckboxChange}
                             />
-                            <p className="choreCheckListItem">{item.choreName}</p>
+                            <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).format('YYYY-MM-DD')}</span></p>
                         </div>
                     </div>)
                 })}
@@ -94,7 +96,7 @@ const RewardForm = props => {
                             <input type="checkbox" className="choreCheckListCheckBox" aria-label="Checkbox for following text input" 
                             checked={item.completion} name={item.choreName} level={item.level} duedate={item.dueDate} id={item._id} onChange={props.handleCheckboxChange}
                             />
-                            <p className="choreCheckListItem">{item.choreName}</p>
+                            <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).format('YYYY-MM-DD')}</span></p>
                         </div>
                     </div>)
                 })}
