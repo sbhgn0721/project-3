@@ -34,7 +34,7 @@ const RewardForm = props => {
                             checked={item.completion} name={item.choreName} level={item.level} duedate={item.dueDate} id={item._id} onChange={props.handleCheckboxChange}
                             />
                             
-                            <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).format('YYYY-MM-DD')}</span></p>
+                            <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).utc().format('YYYY-MM-DD')}</span></p>
                         </div>
                     </div>)
                 })}
@@ -65,7 +65,7 @@ const RewardForm = props => {
                             <input type="checkbox" className="choreCheckListCheckBox" aria-label="Checkbox for following text input" 
                             checked={item.completion} name={item.choreName} level={item.level} duedate={item.dueDate} id={item._id} onChange={props.handleCheckboxChange}
                             />
-                            <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).format('YYYY-MM-DD')}</span></p>
+                            <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).utc().format('YYYY-MM-DD')}</span></p>
                         </div>
                     </div>)
                 })}
@@ -96,7 +96,7 @@ const RewardForm = props => {
                             <input type="checkbox" className="choreCheckListCheckBox" aria-label="Checkbox for following text input" 
                             checked={item.completion} name={item.choreName} level={item.level} duedate={item.dueDate} id={item._id} onChange={props.handleCheckboxChange}
                             />
-                            <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).format('YYYY-MM-DD')}</span></p>
+                            <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).utc().format('YYYY-MM-DD')}</span></p>
                         </div>
                     </div>)
                 })}
