@@ -36,4 +36,3 @@ const ChoreTableRow = props => {
 }
 
 export default ChoreTableRow
-

@@ -1,20 +1,20 @@
 const db = require("../models");
 
 module.exports = {
-  findAll: function(req, res) {
+  findAll: function (req, res) {
     db.Chore
       .find(req.query)
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  findById: function(req, res) {
+  findById: function (req, res) {
     db.Chore
       .findById(req.params.id)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  create: function(req, res) {
+  create: function (req, res) {
     console.log(req.body);
     db.Chore
       .create(req.body)
@@ -59,7 +59,7 @@ module.exports = {
     })
     
   },
-  remove: function(req, res) {
+  remove: function (req, res) {
     db.Chore
       .findById({ _id: req.params.id })
       .then(dbModel => dbModel.remove())

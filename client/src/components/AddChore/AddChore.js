@@ -14,40 +14,40 @@ const AddChore = props => {
 
             </ul>
 
-            
+
 
             <form id="addChoreForm">
                 <div className="form-group">
                     <label htmlFor="choreName">Chore Name</label>
                     <input type="text" className="form-control" id="choreName" placeholder="clean your room"
-                    value={props.choreName}
-                    name="choreName"
-                    onChange={props.handleChoreNameChange}
+                        value={props.choreName}
+                        name="choreName"
+                        onChange={props.handleChoreNameChange}
                     />
                 </div>
                 <div className="form-group">
-                        <label htmlFor="rewardLevel">Reward Level</label>
-                        <select className="form-control" id="rewardLevel" value={props.level} name="level" onChange={props.handleLevelChange}>
-                            <option value="1">Level 1</option>
-                            <option value="2">Level 2</option>
-                            <option value="3">Level 3</option>
-                            
-                        </select>
+                    <label htmlFor="rewardLevel">Reward Level</label>
+                    <select className="form-control" id="rewardLevel" value={props.level} name="level" onChange={props.handleLevelChange}>
+                        <option value="1">Level 1</option>
+                        <option value="2">Level 2</option>
+                        <option value="3">Level 3</option>
+
+                    </select>
                 </div>
                 <div className="form-group">
-                        <label htmlFor="dueDate">Due Date</label>
-                        <input type="date" className="form-control" id="dueDate" placeholder="07/26/2019"
+                    <label htmlFor="dueDate">Due Date</label>
+                    <input type="date" className="form-control" id="dueDate" placeholder="07/26/2019"
                         value={props.dueDate}
                         name="dueDate"
                         onChange={props.handleDueDateChange}
-                        />       
+                    />
                 </div>
             </form>
-           
+
 
         </div>
-            )
-            }
-        
-        
+    )
+}
+
+
 export default AddChore;

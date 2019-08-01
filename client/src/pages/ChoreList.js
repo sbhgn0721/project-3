@@ -1,13 +1,13 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import NavTabs from "../components/NavTabs/NavTabs";
 import AddChore from "../components/AddChore/AddChore";
-import ChoreTableHead from "../components/ChoreTableHead/ChoreTableHead"
-import ChoreTableRow from "../components/ChoreTableRow/ChoreTableRow"
-import ChoreModal from "../components/ChoreModal/ChoreModal"
+import ChoreTableHead from "../components/ChoreTableHead/ChoreTableHead";
+import ChoreTableRow from "../components/ChoreTableRow/ChoreTableRow";
+import ChoreModal from "../components/ChoreModal/ChoreModal";
 import API from "../utils/API";
 
 class ChoreList extends Component {
-    state= {
+    state = {
         choreName: "",
         level: "1",
         dueDate: "",
@@ -22,34 +22,34 @@ class ChoreList extends Component {
     componentDidMount() {
         console.log("called chore list");
         API.getChore()
-        .then(res => this.setState({ choreList: res.data}))
-        .catch(err => console.log(err))
+            .then(res => this.setState({ choreList: res.data }))
+            .catch(err => console.log(err))
     }
 
     handleChoreNameChange = event => {
-        this.setState({choreName: event.target.value})
+        this.setState({ choreName: event.target.value })
     }
 
-    handleLevelChange =  event => {
-        this.setState({level: event.target.value})
+    handleLevelChange = event => {
+        this.setState({ level: event.target.value })
     }
 
     handleDueDateChange = event => {
-        this.setState({dueDate: event.target.value})
+        this.setState({ dueDate: event.target.value })
     }
 
-    handleSaveChore =  event => {
+    handleSaveChore = event => {
         event.preventDefault();
-        console.log('hkhk',this.state.choreName)
-        let savedChore=  {
+        console.log('hkhk', this.state.choreName)
+        let savedChore = {
             choreName: this.state.choreName,
             level: this.state.level,
             completion: false
         }
         API.saveChore(savedChore)
-        .then(this.setState({message: alert("Your chore is saved!")}))
-        .then(res => this.componentDidMount())
-        .catch(err => console.log(err))
+            .then(this.setState({ message: alert("Your chore is saved!") }))
+            .then(res => this.componentDidMount())
+            .catch(err => console.log(err))
     }
 
     handleUpdateChore = (event,id) => {
@@ -75,10 +75,11 @@ class ChoreList extends Component {
             API.deleteChore(id)
             .then(res => this.componentDidMount())
             .catch(err => console.log(err))
-        }
-        
+
     }
 
+    }
+    
     loadChoreModal = item => {
 
             this.setState(
@@ -113,7 +114,7 @@ class ChoreList extends Component {
 
     
     render() {
-        return(
+        return (
             <div>
                 <NavTabs />
                 <AddChore 
@@ -148,8 +149,8 @@ class ChoreList extends Component {
             </div>
         )
     }
-      
-    
+
+
 }
 
 export default ChoreList

@@ -8,11 +8,11 @@ export default {
         return axios.post("/api/chores", savedChores);
     },
 
-    getChore: function (){
+    getChore: function () {
         return axios.get("/api/chores");
     },
 
-    deleteChore: function(id){
+    deleteChore: function (id) {
         return axios.delete("/api/chores/" + id);
     },
 
