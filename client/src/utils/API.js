@@ -16,22 +16,22 @@ export default {
         return axios.delete("/api/chores/" + id);
     },
 
-    updateChore: function (updatedChore) {
+    updateChore: function(updatedChore) {
         console.log(updatedChore);
         let id = updatedChore.id;
-        return axios.put("/api/chores/" + id, updatedChore);
+        return axios.put("/api/chores/"+id, updatedChore);
     },
 
-    saveReward: function (savedReward) {
+    saveReward: function(savedReward) {
         console.log(savedReward);
-        return axios.put("/api/rewards/" + savedReward.id, savedReward);
+        return axios.put("/api/rewards/"+savedReward.id, savedReward);
     },
 
-    getReward: function () {
+    getReward: function(){
         return axios.get("/api/rewards");
     },
 
-    getChoreByLevel: function (level) {
-        return axios.get("/api/rewards/level/" + level);
+    getChoreByLevel: function(level){
+        return axios.get("/api/rewards/level/"+level);
     }
 }
