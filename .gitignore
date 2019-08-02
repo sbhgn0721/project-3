@@ -2,6 +2,5 @@
 .DS_store
 
 # dependencies
-/node_modules
 node_modules/
-node_modules
+
