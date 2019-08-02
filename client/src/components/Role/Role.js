@@ -1,7 +1,7 @@
 import React from "react";
 import "./Role.css";
 
-const ChoreListandRewardList =() =>(
+const Role =() =>(
     
         <div>
             <a href="/parent/" className="btn btn-primary" id="parentPage-button">Parent Page</a>
@@ -11,4 +11,4 @@ const ChoreListandRewardList =() =>(
     )
 
 
-export default ChoreListandRewardList;
+export default Role;
