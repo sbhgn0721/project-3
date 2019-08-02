@@ -1,5 +1,5 @@
 {
-  "name": "project-3",
+  "name": "chore-list",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -26,5 +26,16 @@
   "dependencies": {
     "axios": "^0.19.0",
     "express": "^4.17.1",
-    
+    "if-env": "^1.0.4",
+    "mongoose": "^5.6.5",
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.1"
+  }
 }
