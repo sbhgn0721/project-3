@@ -1,4 +1,5 @@
 .gitignore
+.DS_store
 
 # dependencies
 /node_modules
