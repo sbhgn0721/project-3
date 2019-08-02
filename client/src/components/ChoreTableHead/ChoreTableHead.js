@@ -6,7 +6,7 @@ const ChoreTableHead = props => {
     return (
 
         <div>
-            
+
             <table className="table choreTableHead">
                 <thead className="thead-dark">
                     <tr>
@@ -19,9 +19,9 @@ const ChoreTableHead = props => {
 
                     </tr>
                 </thead>
-               
-                
-                
+
+
+
             </table>
 
 
