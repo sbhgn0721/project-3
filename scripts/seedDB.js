@@ -7,7 +7,7 @@ mongoose.connect(
 );
 
 /*
-const choreSeed =
+const choreSeed = 
    [{
         choreName: "",
         level: "1",
