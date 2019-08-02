@@ -1,0 +1,50 @@
+#rewardForm {
+    margin-left: 15%;
+    margin-top: -2%;
+}
+
+.rewardFormInput {
+    width: 60%;
+    margin-left: 10%;
+   
+}
+
+.editButton {
+    margin-left: -400%;
+}
+
+.saveButton {
+    margin-left: -600%;
+}
+
+#level2RewardRow{
+    margin-top: 10%;
+}
+
+#level3RewardRow {
+    margin-top: 10%;
+}
+
+
+
+.choreCheckListItem {
+    border-bottom: 1px solid #ced4da;
+    width: 52%;
+    margin-top: 0.5%;
+    margin-left: 2%;
+}
+
+.choreCheckListCheckBox {
+    margin-left: 1%;
+}
+
+span:after{
+    content:" "; 
+    display:inline-block; 
+    width:32px;
+}
+
+#chore-list-button {
+    margin-top: 8%;
+    margin-left: 80%;
+}

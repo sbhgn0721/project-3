@@ -1,0 +1,27 @@
+.choreTableHead{
+    width: 70%;
+}
+
+.tableIndex{
+    width: 5%;
+}
+
+.tableChoreName {
+    width:35%;
+}
+
+.tableChoreLevel {
+    width: 10%;
+}
+
+.tableChoreDueDate {
+    width: 30%;
+}
+
+.tableEditBtn {
+    width: 15%;
+}
+
+.tableDeleteBtn {
+    width: 15%;
+}
