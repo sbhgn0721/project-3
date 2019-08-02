@@ -1,6 +1,6 @@
 #rewardForm {
     margin-left: 15%;
-    margin-top: 10%;
+    margin-top: -2%;
 }
 
 .rewardFormInput {
@@ -42,4 +42,9 @@ span:after{
     content:" "; 
     display:inline-block; 
     width:32px;
+}
+
+#chore-list-button {
+    margin-top: 8%;
+    margin-left: 80%;
 }
