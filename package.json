@@ -1,16 +1,16 @@
 {
-  "name": "chore-list",
+  "name": "project-3",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/monkeyseemonkey2do/*'\" \"npm run client\"",
-    "client": "cd client/monkeyseemonkey2do && npm run start",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
     "seed": "node scripts/seedDB.js",
-    "install": "cd client/monkeyseemonkey2do && npm install",
-    "build": "cd client/monkeyseemonkey2do && npm run build",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
   "repository": {
@@ -23,25 +23,8 @@
     "url": "https://github.com/sbhgn0721/project-3/issues"
   },
   "homepage": "https://github.com/sbhgn0721/project-3#readme",
-  "devDependencies": {
-    "concurrently": "^4.1.1",
-    "nodemon": "^1.19.1"
-  },
   "dependencies": {
     "axios": "^0.19.0",
     "express": "^4.17.1",
-    "if-env": "^1.0.4",
-    "moment": "^2.24.0",
-    "mongoose": "^5.6.5",
-<<<<<<< HEAD
-    "path": "^0.12.7"
-=======
-    "nodemon": "^1.19.1",
-    "path": "^0.12.7",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.0.1"
->>>>>>> master
-  }
+    
 }
