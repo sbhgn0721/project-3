@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./welcome.css";
-import Tree from "../components//Tree/Tree";
+import Tree from "../components/Tree/index";
 
 
 class Welcome extends Component {
@@ -16,6 +16,7 @@ class Welcome extends Component {
 
 
                 </div>
+                {/* <img src = "../../public/images/palmtree.png" alt="attempt from Welcome component"></img> */}
                 <Tree />
             </div>
 
