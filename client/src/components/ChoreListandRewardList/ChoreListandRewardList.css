@@ -20,3 +20,9 @@
     margin-top: 150px;
     margin-left: 50px;
 }
+span {
+    position: relative;
+    top: 9vw;
+    color: black;
+    font-weight: bold;
+}
