@@ -24,7 +24,6 @@ const RewardForm = props => {
                         <button className="saveButton" onClick={props.handleSaveLevel1Reward}><i className="fas fa-save"></i></button>
                     </div>
                 </div>
-
                 {props.level1ChoreList.map(item => {
                     return (
                     <div className="form-group form-row choreCheckList">
