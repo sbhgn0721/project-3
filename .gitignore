@@ -1,7 +1,7 @@
 *Thanks to fine folks -> https://github.com/facebook/react/blob/master/.gitignore
 *And other fine folks -> https://guide.freecodecamp.org/git/gitignore/
 
-# Ignore Mac system files
+# Ignore Mac system files, including redundancies since case-sensitivity matters, and I've seen each spelling referenced online
 .DS_STORE
 .DS_Store
 .DS_store
