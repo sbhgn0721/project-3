@@ -33,8 +33,7 @@ class RewardList extends Component {
                     rewardLevel2Name: level2Name,
                     rewardLevel3Name: level3Name
                 })
-
-
+                
             })
             .then(() => {
                 API.getChoreByLevel("1")
