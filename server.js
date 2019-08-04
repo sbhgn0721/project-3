@@ -16,9 +16,9 @@ app.use(routes);
 
 
 mongoose.Promise = Promise;
-const dbURI = process.env.MONGODB_URI || "mongodb://monkeyseemonkey2do:monkeyseemonkey2do@ds033037.mlab.com:33037/heroku_2rbklfzx";
+const dbURI = process.env.MONGODB_URI || "mongodb://localhost/monkeySeeMonkey2Dodb";
 
-mongoose.set('useVreateIndex', true)
+mongoose.set('useCreateIndex', true)
 mongoose.connect(dbURI, { useNewUrlParser: true })
 
 const db = mongoose.connection;
