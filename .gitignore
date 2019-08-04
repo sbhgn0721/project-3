@@ -1,5 +1,8 @@
 *Thanks to fine folks -> https://github.com/facebook/react/blob/master/.gitignore
 *And other fine folks -> https://guide.freecodecamp.org/git/gitignore/
+#until MVP is complete
+package-lock.json
+client/package-lock.json
 
 # Ignore Mac system files, including redundancies since case-sensitivity matters, and I've seen each spelling referenced online.
 .DS_STORE

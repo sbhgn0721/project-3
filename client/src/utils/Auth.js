@@ -73,6 +73,7 @@ class Auth {
   }
 }
 
+
 const auth0Client = new Auth();
 
 export default auth0Client;

@@ -36,7 +36,11 @@
     "react-scripts": "^3.0.1"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "concurrently": "^4.1.1",
     "nodemon": "^1.19.1"
+=======
+    "concurrently": "^4.1.1"
+>>>>>>> origin
   }
 }
