@@ -4,9 +4,9 @@ class Auth {
   constructor() {
     this.auth0 = new auth0.WebAuth({
       // the following three lines MUST be updated
-      domain: 'bananaco.auth0.com',
-      audience: 'https://bananaco.auth0.com/userinfo',
-      clientID: 'wattIvPVEm2TSZV0lKxrY65uTtz6VM1o',
+      domain: 'young-wave-7408.auth0.com',
+      audience: 'https://young-wave-7408.auth0.com/userinfo',
+      clientID: 'mO4o82RWTjPlqoNtm_Ub9zIBk7VRKoin',
       redirectUri: 'https://still-tor-34851.herokuapp.com/callback',
       responseType: 'id_token',
       scope: 'openid profile'
@@ -57,8 +57,8 @@ class Auth {
 
   signOut() {
     this.auth0.logout({
-      returnTo: 'https://still-tor-34851.herokuapp.com/',
-      clientID: 'wattIvPVEm2TSZV0lKxrY65uTtz6VM1o',
+      returnTo: 'https://still-tor-34851.herokuapp.com',
+      clientID: 'mO4o82RWTjPlqoNtm_Ub9zIBk7VRKoin',
     });
   }
 
