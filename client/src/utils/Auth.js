@@ -7,7 +7,7 @@ class Auth {
       domain: 'young-wave-7408.auth0.com',
       audience: 'https://young-wave-7408.auth0.com/api/v2/',
       clientID: 'mO4o82RWTjPlqoNtm_Ub9zIBk7VRKoin',
-      redirectUri: `${window.location.origin}/callback`,
+      redirectUri: 'https://still-tor-34851.herokuapp.com',
       responseType: 'id_token',
       scope: 'openid profile'
     });
