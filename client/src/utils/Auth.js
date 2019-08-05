@@ -5,7 +5,7 @@ class Auth {
     this.auth0 = new auth0.WebAuth({
       // the following three lines MUST be updated
       domain: 'young-wave-7408.auth0.com',
-      audience: 'https://young-wave-7408.auth0.com/userinfo',
+      audience: 'https://young-wave-7408.auth0.com/api/v2/',
       clientID: 'mO4o82RWTjPlqoNtm_Ub9zIBk7VRKoin',
       redirectUri: `${window.location.origin}/callback`,
       responseType: 'id_token',
