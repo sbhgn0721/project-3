@@ -1,6 +1,9 @@
 {
   "name": "chore-list",
   "version": "1.0.0",
+  "engines": {
+    "node": "11.14.0"
+  },
   "description": "",
   "main": "server.js",
   "scripts": {
