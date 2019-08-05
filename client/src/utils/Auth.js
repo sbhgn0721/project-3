@@ -1,4 +1,5 @@
 import auth0 from 'auth0-js';
+import Callback from './Callback'
 
 
 class Auth {
@@ -8,7 +9,7 @@ class Auth {
       domain: 'young-wave-7408.auth0.com',
       audience: 'https://young-wave-7408.auth0.com/api/v2/',
       clientID: 'mO4o82RWTjPlqoNtm_Ub9zIBk7VRKoin',
-      redirectUri: 'https://still-tor-34851.herokuapp.com/role',
+      redirectUri: 'https://young-wave-7408.auth0.com/api/v2/callback',
       responseType: 'id_token',
       scope: 'openid profile'
     });
