@@ -15,4 +15,4 @@ class Callback extends Component {
   }
 }
 
-export default Callback;
+export default withRouter(Callback);
