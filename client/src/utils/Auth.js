@@ -1,5 +1,6 @@
 import auth0 from 'auth0-js';
 
+
 class Auth {
   constructor() {
     this.auth0 = new auth0.WebAuth({
@@ -7,7 +8,7 @@ class Auth {
       domain: 'young-wave-7408.auth0.com',
       audience: 'https://young-wave-7408.auth0.com/api/v2/',
       clientID: 'mO4o82RWTjPlqoNtm_Ub9zIBk7VRKoin',
-      redirectUri: 'https://still-tor-34851.herokuapp.com',
+      redirectUri: 'https://still-tor-34851.herokuapp.com/role',
       responseType: 'id_token',
       scope: 'openid profile'
     });
