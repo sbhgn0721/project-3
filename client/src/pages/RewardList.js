@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavTabs from "../components/NavTabs/NavTabs";
 import RewardForm from "../components/RewardForm/RewardForm"
 import API from "../utils/API";
+import { set } from "mongoose";
 
 
 class RewardList extends Component {
@@ -12,7 +13,11 @@ class RewardList extends Component {
         rewardLevel3Name: "",
         level: "1",
         completion: "false",
-
+        
+        rewardLevel1AnimationButtonShown: "false",
+        rewardLevel2AnimationButtonShown: "false",
+        rewardLevel3AnimationButtonShown: "false",
+        
         rewardList: [],
         level1ChoreList: [],
         level2ChoreList: [],
@@ -33,43 +38,43 @@ class RewardList extends Component {
                     rewardLevel2Name: level2Name,
                     rewardLevel3Name: level3Name
                 })
-                
+
             })
             .then(() => {
                 API.getChoreByLevel("1")
                     .then(res => {
                         // console.log("is it here", res.data[0].chores);
                         this.setState({ level1ChoreList: res.data[0].chores })
-                        const level1TotalChores = res.data[0].chores.length;
-                        console.log("level1TotalChores: ", level1TotalChores);
-                        const level1ChoreCount = res.data[0].chores.filter(item => item.completion === true).length;
-                        console.log("level1ChoreCount: ", level1ChoreCount);
-                        const level1ChoreComplete = res.data[0].chores.filter(item => item.completion === false).length === 0;
-                        console.log("level1ChoreComplete: ", level1ChoreComplete);
+                        const level1TotalChoreCount = res.data[0].chores.length;
+                        console.log("level1TotalChoreCount: ", level1TotalChoreCount);
+                        const level1CompletedChoreCount = res.data[0].chores.filter(item => item.completion === true).length;
+                        console.log("level1CompletedChoreCount: ", level1CompletedChoreCount);
+                        const level1ChoreCompletionStatus = res.data[0].chores.filter(item => item.completion === false).length === 0;
+                        console.log("level1ChoreCompletionStatus: ", level1ChoreCompletionStatus);
                     })
 
                 API.getChoreByLevel("2")
                     .then(res => {
                         // console.log("is it here", res.data[0].chores);
                         this.setState({ level2ChoreList: res.data[0].chores })
-                        const level2TotalChores = res.data[0].chores.length;
-                        console.log("level2TotalChores: ", level2TotalChores);
-                        const level2ChoreCount = res.data[0].chores.filter(item => item.completion === true).length;
-                        console.log("level2ChoreCount: ", level2ChoreCount);
-                        const level2ChoreComplete = res.data[0].chores.filter(item => item.completion === false).length === 0;
-                        console.log("level2ChoreComplete: ", level2ChoreComplete);
+                        const level2TotalChoreCount = res.data[0].chores.length;
+                        console.log("level2TotalChoreCount: ", level2TotalChoreCount);
+                        const level2CompletedChoreCount = res.data[0].chores.filter(item => item.completion === true).length;
+                        console.log("level2CompletedChoreCount: ", level2CompletedChoreCount);
+                        const level2ChoreCompletionStatus = res.data[0].chores.filter(item => item.completion === false).length === 0;
+                        console.log("level2ChoreCompletionStatus: ", level2ChoreCompletionStatus);
                     })
 
                 API.getChoreByLevel("3")
                     .then(res => {
                         // console.log("is it here", res.data[0].chores);
                         this.setState({ level3ChoreList: res.data[0].chores })
-                        const level3TotalChores = res.data[0].chores.length;
-                        console.log("level3TotalChores: ", level3TotalChores);
-                        const level3ChoreCount = res.data[0].chores.filter(item => item.completion === true).length;
-                        console.log("level3ChoreCount: ", level3ChoreCount);
-                        const level3ChoreComplete = res.data[0].chores.filter(item => item.completion === false).length === 0;
-                        console.log("level3ChoreComplete: ", level3ChoreComplete);
+                        const level3TotalChoreCount = res.data[0].chores.length;
+                        console.log("level3TotalChoreCount: ", level3TotalChoreCount);
+                        const level3CompletedChoreCount = res.data[0].chores.filter(item => item.completion === true).length;
+                        console.log("level3CompletedChoreCount: ", level3CompletedChoreCount);
+                        const level3ChoreCompletionStatus = res.data[0].chores.filter(item => item.completion === false).length === 0;
+                        console.log("level3ChoreCompletionStatus: ", level3ChoreCompletionStatus);
                     })
 
             })
@@ -93,6 +98,12 @@ class RewardList extends Component {
             .then(this.setState({ message: alert("Your reward is saved!") }))
             .then(res => this.componentDidMount())
             .catch(err => console.log(err))
+    }
+
+    // this.handleLevel1RewardAnimationTrigger = this.handleLevel1RewardAnimationTrigger.bind(this);
+    
+    handleLevel1RewardAnimationTrigger = event => {
+        this.setState({rewardLevel1AnimationButtonShown: true});
     }
 
     handleLevel2RewardNameChange = event => {
@@ -137,7 +148,7 @@ class RewardList extends Component {
         console.log("what is event", event.target);
         const itemName = event.target.name;
         const isChecked = event.target.checked;
-        console.log("last item checked:", isChecked,"\n"+itemName);
+        console.log("last item checked:", isChecked, "\n" + itemName);
         const id = event.target.id;
         const level = event.target.getAttribute("level");
         const dueDate = event.target.getAttribute("duedate");
@@ -158,8 +169,6 @@ class RewardList extends Component {
 
 
     }
-
-
 
     render() {
         return (

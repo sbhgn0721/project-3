@@ -1,6 +1,7 @@
 import React from "react"
 import "./RewardForm.css"
-import Moment from 'moment';
+import Moment from "moment";
+import Spritesheet from "../Spritesheet/Spritesheet";
 
 const RewardForm = props => {
     return (
@@ -18,11 +19,16 @@ const RewardForm = props => {
                             name="level1RewardName"
                             onChange={props.handleLevel1RewardNameChange}
                         />
-
                     </div>
                     <div className="col-auto">
                         <button className="saveButton" onClick={props.handleSaveLevel1Reward}><i className="fas fa-save"></i></button>
                     </div>
+                    <div className="col-auto" onChange={props.rewardLevel1AnimationButtonShown}>
+                        <button className="btn btn-warning" id="rewardLevel1Animation" onClick={props.rewardLevel1Animation}>Claim your prize!</button>
+                    </div>
+                </div>
+                <div>
+                    <Spritesheet/>
                 </div>
                 {props.level1ChoreList.map(item => {
                     return (
