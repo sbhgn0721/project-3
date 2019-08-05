@@ -1,7 +1,7 @@
 import React from "react"
 import "./RewardForm.css"
 import Moment from "moment";
-import Spritesheet from "../Spritesheet/Spritesheet";
+import SpritesheetContainer from "../SpritesheetContainer/SpritesheetContainer";
 
 const RewardForm = props => {
     return (
@@ -28,7 +28,7 @@ const RewardForm = props => {
                     </div>
                 </div>
                 <div>
-                    <Spritesheet/>
+                    <SpritesheetContainer/>
                 </div>
                 {props.level1ChoreList.map(item => {
                     return (
