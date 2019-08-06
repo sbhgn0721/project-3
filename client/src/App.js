@@ -28,6 +28,7 @@ class App extends Component {
 
   async componentDidMount() {
     if (this.props.location.pathname === '/callback') {
+      console.log("in appjs compoent");
       this.setState({ checkingSession: false });
       return;
     }

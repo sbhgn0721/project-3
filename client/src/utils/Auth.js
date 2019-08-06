@@ -14,6 +14,9 @@ class Auth {
       scope: 'openid profile'
     });
 
+    console.log("rung authorize", this.auth0);
+
+
     this.getProfile = this.getProfile.bind(this);
     this.handleAuthentication = this.handleAuthentication.bind(this);
     this.isAuthenticated = this.isAuthenticated.bind(this);
@@ -34,7 +37,6 @@ class Auth {
   }
 
   signIn() {
-    console.log("rung authorize", this.auth0);
     this.auth0.authorize();
   }
 
