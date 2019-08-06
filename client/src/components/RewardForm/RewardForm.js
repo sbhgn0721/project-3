@@ -1,13 +1,7 @@
 import React from "react"
 import "./RewardForm.css"
 import Moment from "moment";
-<<<<<<< HEAD
-import Spritesheet from "../Spritesheet/Spritesheet";
- 
-=======
 import SpritesheetContainer from "../SpritesheetContainer/SpritesheetContainer";
-
->>>>>>> 9fca20743c27cc120e64f272cbd230f8c5541c2a
 const RewardForm = props => {
     return (
         <div>
