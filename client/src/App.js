@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {Route, Switch, withRouter} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 //import auth0Client from './utils/Auth';
 //import Callback from './utils/Callback';
 import NavTabs from "./components/NavTabs/NavTabs";
@@ -18,7 +19,7 @@ import './App.css';
 
 // made a change
 
-class App extends Component {
+class App extends React.Component {
   /*
   constructor(props) {
     super(props);
@@ -45,17 +46,17 @@ class App extends Component {
 
   render() {
     return (
-
+      <Router>
         <div>
-        <NavTabs />
-        
+          <NavTabs />
+
 
           <Switch>
             {/*
             <Route path="/back" component={Callback} />
             */}
             <Route exact path="/" component={Welcome} />
-            <Route exact path="/role" component={Role} 
+            <Route exact path="/role" component={Role}
             /*checkingSession={this.state.checkingSession} */
             />
             <Route exact path="/parent" component={Parent} /*checkingSession={this.state.checkingSession}*/
@@ -72,8 +73,9 @@ class App extends Component {
           </Switch>
 
         </div>
+      </Router>
     );
   }
 }
 
-export default withRouter(App);
+export default App;
