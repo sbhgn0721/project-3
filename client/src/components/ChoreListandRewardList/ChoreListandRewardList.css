@@ -1,11 +1,28 @@
 #choreList-button {
-    margin-top: 150px;
-    margin-left: 500px;
-    width: 100px;
+    position: relative;
+    background: url("bulletlist.jpg"); 
+    top: 5vw;
+    left: 45vw;
+    width: 134px;
+    height: 130px;
+    background-size: cover;
 
 }
 
 #rewardList-button {
+    position: relative;
+    left: 32vw;
+    top: 15vw;
+    background: url("badge.jpg");
+    background-size: cover;
+    width: 134px;
+    height: 130px;
     margin-top: 150px;
     margin-left: 50px;
+}
+span {
+    position: relative;
+    top: 9vw;
+    color: black;
+    font-weight: bold;
 }
