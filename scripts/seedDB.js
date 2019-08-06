@@ -46,7 +46,7 @@ const rewardSeed =
         level: "3"
     }];
 
-db.Reward
+db.Rewardru
     .remove({})
     .then(() => db.Reward.collection.insertMany(rewardSeed))
     .then(data => {

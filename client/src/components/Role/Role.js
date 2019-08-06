@@ -1,13 +1,21 @@
 import React from "react";
 import "./Role.css";
+import palmtree from "./palmtree.png";
 
-const Role =() =>(
-    
+
+
+const Role =() => (
+    <div>
         <div>
-            <a href="/parent/" className="btn btn-primary" id="parentPage-button">Parent Page</a>
-            <a href="/child/" className="btn btn-success" id="childPage-button">Child Page</a>
+            <a href="/parent/" className="btn btn-secondary" id="parentPage-button"><p1><strong>Parent Page</strong></p1></a>
+            <a href="/child/" className="btn btn-secondary" id="childPage-button"><p1><strong>Child Page</strong></p1></a>
 
         </div>
+        <img id="tree"src={palmtree} alt="Tree" />
+
+        </div>
+        
+       
     )
 
 
