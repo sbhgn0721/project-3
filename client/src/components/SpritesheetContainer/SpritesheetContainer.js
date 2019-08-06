@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Spritesheet from 'react-responsive-spritesheet';
-import './Spritesheet.css';
+import  monkey1  from '../Sprites/Monkeys/monkey1.png'
+import './SpritesheetContainer.css';
 
 class SpritesheetContainer extends Component {
     constructor() {
@@ -16,11 +17,13 @@ class SpritesheetContainer extends Component {
             <div className="rrs-container">
                 <Spritesheet
                     className={`my-element__class--style`}
-                    image={`https://raw.githubusercontent.com/danilosetra/react-responsive-spritesheet/master/assets/images/examples/sprite-image-horizontal.png`}
-                    widthFrame={420}
-                    heightFrame={500}
-                    steps={14}
-                    fps={10}
+                    image={monkey1}
+                    widthFrame={150}
+                    heightFrame={250}
+                    steps={5}
+                    fps={1}
+                    startAt={2}
+                    // endAt={3}
                     autoplay={true}
                     loop={true}
                     background={`https://raw.githubusercontent.com/danilosetra/react-responsive-spritesheet/master/assets/images/examples/sprite-image-background.png`}
