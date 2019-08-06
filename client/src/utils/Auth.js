@@ -1,5 +1,5 @@
 import auth0 from 'auth0-js';
-import Callback from './Callback'
+//import Callback from './Callback'
 
 
 class Auth {

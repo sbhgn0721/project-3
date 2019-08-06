@@ -1,19 +1,23 @@
 import React from "react";
 import { Link, withRouter } from 'react-router-dom';
-import auth0Client from '../../utils/Auth';
+//import auth0Client from '../../utils/Auth';
 import "./NavTabs.css";
 
 function NavTabs(props) {
+    /*
     const signOut = () => {
         auth0Client.signOut();
         props.history.replace('/');
     };
+    */
 
     return (
         <nav className="navbar navbar-dark fixed-top">
             <Link className="navbar-brand" to="/">
                 <p class="logo">Monkey See, Monkey 2 Do</p>
           </Link>
+
+          {/*
             {
                 // logic for unauthenticated v authenticated user experience
                 !auth0Client.isAuthenticated() &&
@@ -27,6 +31,8 @@ function NavTabs(props) {
                 </div>
                 
             }
+
+        */}
         </nav>
     );
 

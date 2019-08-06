@@ -1,7 +1,7 @@
 import React from "react";
-import "./Role.css";
+import "./RoleChoose.css";
 
-const Role =() =>(
+const RoleChoose =() =>(
     
         <div>
             <a href="/parent/" className="btn btn-primary" id="parentPage-button">Parent Page</a>
@@ -11,4 +11,4 @@ const Role =() =>(
     )
 
 
-export default Role;
+export default RoleChoose

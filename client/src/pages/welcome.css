@@ -9,3 +9,17 @@ h5 {
     border-radius: 20px;
     height: 270px;
 }
+
+
+#parentPage-button {
+    position: absolute;
+    left: 230px;
+   
+    
+}
+
+#childPage-button {
+    position: absolute;
+    left: 1000px;
+    
+}
