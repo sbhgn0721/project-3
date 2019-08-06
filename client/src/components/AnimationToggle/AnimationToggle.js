@@ -4,7 +4,9 @@ export default class AnimationToggle extends Component {
     constructor(props) {
         super(props);
         this.state = { isToggleOn: true };
-        this.state = { showAnimation: "none" };
+        this.state = { showRewardLevel1Animation: "none" };
+        this.state = { showRewardLevel2Animation: "none" };
+        this.state = { showRewardLevel3Animation: "none" };
         // This binding is necessary to make `this` work in the callback
         this.handleClick = this.handleClick.bind(this);
     }
@@ -18,7 +20,7 @@ export default class AnimationToggle extends Component {
 
     render() {
         return (
-            <button className="btn btn-warning" id="reward1-toggle-button" onClick={this.handleClick}>
+            <button className="btn btn-warning" onClick={this.handleClick}>
                 {this.state.isToggleOn ? 'Hide reward' : 'Get reward!'}
             </button>
         );

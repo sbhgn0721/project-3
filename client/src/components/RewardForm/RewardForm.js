@@ -1,7 +1,9 @@
 import React from "react"
 import "./RewardForm.css"
 import Moment from "moment";
-import SpritesheetContainer from "../SpritesheetContainer/SpritesheetContainer";
+import Spritesheet1Container from "../SpritesheetContainer/Spritesheet1Container";
+import Spritesheet2Container from "../SpritesheetContainer/Spritesheet2Container";
+import Spritesheet3Container from "../SpritesheetContainer/Spritesheet3Container";
 import AnimationToggle from "../AnimationToggle/AnimationToggle";
 
 const RewardForm = props => {
@@ -24,11 +26,11 @@ const RewardForm = props => {
                     <div className="col-auto">
                         <button className="saveButton" onClick={props.handleSaveLevel1Reward}><i className="fas fa-save"></i></button>
                     </div>
-                    <div className="col-auto" style={{ display: props.showButton }} >
+                    <div className="col-auto" style={{ display: props.showRewardLevel1Button }} >
                         <div className="btn btn-warning discoEffect" id="reward1-disco-button">
                             <AnimationToggle />
                         </div>
-                        <SpritesheetContainer style={{ display: props.showAnimation }} />
+                        <Spritesheet1Container style={{ display: props.showRewardLevel1Animation }} />
                     </div>
                 </div>
                 {props.level1ChoreList.map(item => {
@@ -60,7 +62,12 @@ const RewardForm = props => {
                     <div className="col-auto">
                         <button className="saveButton" onClick={props.handleSaveLevel2Reward}><i className="fas fa-save"></i></button>
                     </div>
-
+                    <div className="col-auto" style={{ display: props.showRewardLevel2Button }} >
+                        <div className="btn btn-warning discoEffect" id="reward2-disco-button">
+                            <AnimationToggle />
+                        </div>
+                        <Spritesheet2Container style={{ display: props.showRewardLevel2Animation }} />
+                    </div>
 
                 </div>
 
@@ -91,6 +98,12 @@ const RewardForm = props => {
                     </div>
                     <div className="col-auto">
                         <button className="saveButton" onClick={props.handleSaveLevel3Reward}><i className="fas fa-save"></i></button>
+                    </div>
+                    <div className="col-auto" style={{ display: props.showRewardLevel3Button }} >
+                        <div className="btn btn-warning discoEffect" id="reward3-disco-button">
+                            <AnimationToggle />
+                        </div>
+                        <Spritesheet3Container style={{ display: props.showRewardLevel3Animation }} />
                     </div>
 
                 </div>

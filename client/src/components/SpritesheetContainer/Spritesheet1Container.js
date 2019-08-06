@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Spritesheet from 'react-responsive-spritesheet';
-import monkey2 from '../Sprites/Monkeys/monkey2.png'
+import monkey1 from '../Sprites/Monkeys/monkey1.png'
 import './SpritesheetContainer.css';
 
-export default class SpritesheetContainer extends Component {
+export default class Spritesheet1Container extends Component {
     constructor() {
         super();
         this.state = {
@@ -16,7 +16,7 @@ export default class SpritesheetContainer extends Component {
             <div className="rrs-container">
                 <Spritesheet
                     className={`my-element__class--style`}
-                    image={monkey2}
+                    image={monkey1}
                     widthFrame={167}
                     heightFrame={237}
                     steps={6}
