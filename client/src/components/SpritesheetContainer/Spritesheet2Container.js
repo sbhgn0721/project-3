@@ -17,10 +17,10 @@ export default class Spritesheet2Container extends Component {
                 <Spritesheet
                     className={`my-element__class--style`}
                     image={monkey2}
-                    widthFrame={167}
+                    widthFrame={169}
                     heightFrame={237}
                     steps={6}
-                    fps={10}
+                    fps={12}
                     autoplay={true}
                     loop={true}
                     // //// for hover over functionality

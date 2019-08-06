@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Spritesheet from 'react-responsive-spritesheet';
-import monkey1 from '../Sprites/Monkeys/monkey1.png'
-import monkey2 from '../Sprites/Monkeys/monkey2.png'
+import monkey3 from '../Sprites/Monkeys/monkey1.png'
 import './SpritesheetContainer.css';
 
 export default class Spritesheet3Container extends Component {
@@ -17,11 +16,11 @@ export default class Spritesheet3Container extends Component {
             <div className="rrs-container">
                 <Spritesheet
                     className={`my-element__class--style`}
-                    image={monkey2}
-                    widthFrame={167}
+                    image={monkey3}
+                    widthFrame={169}
                     heightFrame={237}
                     steps={6}
-                    fps={10}
+                    fps={13}
                     autoplay={true}
                     loop={true}
                     // //// for hover over functionality
