@@ -33,6 +33,7 @@ class Auth {
   }
 
   signIn() {
+    console.log("rung authorize", this.auth0);
     this.auth0.authorize();
   }
 
