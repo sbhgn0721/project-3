@@ -2,6 +2,8 @@ import React from "react"
 import "./RewardForm.css"
 import Moment from "moment";
 import SpritesheetContainer from "../SpritesheetContainer/SpritesheetContainer";
+import AnimationToggle from "../AnimationToggle/AnimationToggle";
+
 const RewardForm = props => {
     return (
         <div>
@@ -22,27 +24,27 @@ const RewardForm = props => {
                     <div className="col-auto">
                         <button className="saveButton" onClick={props.handleSaveLevel1Reward}><i className="fas fa-save"></i></button>
                     </div>
-                    <div className="col-auto" style={{display:props.showButton}} onChange={props.rewardLevel1AnimationButtonShown}>
-                        <button className="btn btn-warning" id="rewardLevel1Animation" onClick={props.rewardLevel1Animation}>Claim your prize!</button>
+                    <div className="col-auto" style={{ display: props.showButton }} >
+                        <div className="btn btn-warning discoEffect" id="reward1-disco-button">
+                            <AnimationToggle />
+                        </div>
+                        <SpritesheetContainer style={{ display: props.showAnimation }} />
                     </div>
-                </div>
-                <div >
-                    <SpritesheetContainer/>
                 </div>
                 {props.level1ChoreList.map(item => {
                     return (
-                    <div className="form-group form-row choreCheckList">
-                        <div className="input-group ">
-                            
-                            <input type="checkbox" className="choreCheckListCheckBox" aria-label="Checkbox for following text input" 
-                            checked={item.completion} name={item.choreName} level={item.level} duedate={item.dueDate} id={item._id} onChange={props.handleCheckboxChange}
-                            />
-                            
-                            <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).utc().format('YYYY-MM-DD')}</span></p>
-                        </div>
-                    </div>)
+                        <div className="form-group form-row choreCheckList">
+                            <div className="input-group ">
+
+                                <input type="checkbox" className="choreCheckListCheckBox" aria-label="Checkbox for following text input"
+                                    checked={item.completion} name={item.choreName} level={item.level} duedate={item.dueDate} id={item._id} onChange={props.handleCheckboxChange}
+                                />
+
+                                <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).utc().format('YYYY-MM-DD')}</span></p>
+                            </div>
+                        </div>)
                 })}
-                
+
 
                 <div className="form-group form-row" id="level2RewardRow">
                     <div className="col-auto">
@@ -64,14 +66,14 @@ const RewardForm = props => {
 
                 {props.level2ChoreList.map(item => {
                     return (
-                    <div className="form-group form-row choreCheckList">
-                        <div className="input-group ">
-                            <input type="checkbox" className="choreCheckListCheckBox" aria-label="Checkbox for following text input" 
-                            checked={item.completion} name={item.choreName} level={item.level} duedate={item.dueDate} id={item._id} onChange={props.handleCheckboxChange}
-                            />
-                            <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).utc().format('YYYY-MM-DD')}</span></p>
-                        </div>
-                    </div>)
+                        <div className="form-group form-row choreCheckList">
+                            <div className="input-group ">
+                                <input type="checkbox" className="choreCheckListCheckBox" aria-label="Checkbox for following text input"
+                                    checked={item.completion} name={item.choreName} level={item.level} duedate={item.dueDate} id={item._id} onChange={props.handleCheckboxChange}
+                                />
+                                <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).utc().format('YYYY-MM-DD')}</span></p>
+                            </div>
+                        </div>)
                 })}
 
 
@@ -95,14 +97,14 @@ const RewardForm = props => {
 
                 {props.level3ChoreList.map(item => {
                     return (
-                    <div className="form-group form-row choreCheckList">
-                        <div className="input-group">
-                            <input type="checkbox" className="choreCheckListCheckBox" aria-label="Checkbox for following text input" 
-                            checked={item.completion} name={item.choreName} level={item.level} duedate={item.dueDate} id={item._id} onChange={props.handleCheckboxChange}
-                            />
-                            <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).utc().format('YYYY-MM-DD')}</span></p>
-                        </div>
-                    </div>)
+                        <div className="form-group form-row choreCheckList">
+                            <div className="input-group">
+                                <input type="checkbox" className="choreCheckListCheckBox" aria-label="Checkbox for following text input"
+                                    checked={item.completion} name={item.choreName} level={item.level} duedate={item.dueDate} id={item._id} onChange={props.handleCheckboxChange}
+                                />
+                                <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).utc().format('YYYY-MM-DD')}</span></p>
+                            </div>
+                        </div>)
                 })}
 
 

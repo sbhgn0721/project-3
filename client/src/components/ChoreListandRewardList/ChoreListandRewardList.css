@@ -20,7 +20,7 @@
     margin-top: 150px;
     margin-left: 50px;
 }
-span {
+.parentButton {
     position: relative;
     top: 9vw;
     color: black;

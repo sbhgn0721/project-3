@@ -3,7 +3,7 @@ import NavTabs from "../components/NavTabs/NavTabs";
 import RewardForm from "../components/RewardForm/RewardForm"
 import API from "../utils/API";
 
-class RewardList extends Component {
+export default class RewardList extends Component {
 
     state = {
         rewardLevel1Name: "",
@@ -46,7 +46,7 @@ class RewardList extends Component {
                         console.log("level1CompletedChoreCount: ", level1CompletedChoreCount);
                         const level1ChoreCompletionStatus = res.data[0].chores.filter(item => item.completion === false).length === 0;
                         console.log("level1ChoreCompletionStatus: ", level1ChoreCompletionStatus);
-                        if (level1ChoreCompletionStatus) {
+                        if (level1ChoreCompletionStatus === true) {
                             this.setState({showButton:"block"})
                         } else {
                             this.setState({showButton:"none"})
@@ -63,6 +63,11 @@ class RewardList extends Component {
                         console.log("level2CompletedChoreCount: ", level2CompletedChoreCount);
                         const level2ChoreCompletionStatus = res.data[0].chores.filter(item => item.completion === false).length === 0;
                         console.log("level2ChoreCompletionStatus: ", level2ChoreCompletionStatus);
+                        if (level2ChoreCompletionStatus) {
+                            this.setState({showButton:"block"})
+                        } else {
+                            this.setState({showButton:"none"})
+                        }
                     })
 
                 API.getChoreByLevel("3")
@@ -75,6 +80,11 @@ class RewardList extends Component {
                         console.log("level3CompletedChoreCount: ", level3CompletedChoreCount);
                         const level3ChoreCompletionStatus = res.data[0].chores.filter(item => item.completion === false).length === 0;
                         console.log("level3ChoreCompletionStatus: ", level3ChoreCompletionStatus);
+                        if (level3ChoreCompletionStatus) {
+                            this.setState({showButton:"block"})
+                        } else {
+                            this.setState({showButton:"none"})
+                        }
                     })
 
             })
@@ -99,12 +109,6 @@ class RewardList extends Component {
             .then(res => this.componentDidMount())
             .catch(err => console.log(err))
     }
-
-    // handleLevel1RewardAnimationTrigger = event => {
-    //     if (this.state.level1ChoreCompletionStatus) {
-    //         this.setState({showButton:block})
-    //     }
-    // }
 
     handleLevel2RewardNameChange = event => {
         this.setState({ rewardLevel2Name: event.target.value })
@@ -200,5 +204,3 @@ class RewardList extends Component {
         )
     }
 }
-
-export default RewardList
