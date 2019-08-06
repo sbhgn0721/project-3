@@ -22,7 +22,7 @@ class SpritesheetContainer extends Component {
                     heightFrame={250}
                     steps={5}
                     fps={1}
-                    // startAt={1}
+                    startAt={2}
                     // endAt={3}
                     autoplay={true}
                     loop={true}
