@@ -2,7 +2,7 @@ import React from "react"
 import "./RewardForm.css"
 import Moment from "moment";
 import Spritesheet from "../Spritesheet/Spritesheet";
-
+ 
 const RewardForm = props => {
     return (
         <div>
