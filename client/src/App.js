@@ -48,6 +48,7 @@ class App extends Component {
         <NavTabs />
 
           <Switch>
+            <Route path="/back" component={Callback} />
             <Route exact path="/" component={Welcome} />
             <SecuredRoute exact path="/role" component={Role} checkingSession={this.state.checkingSession}/>
             <SecuredRoute exact path="/parent" component={Parent} checkingSession={this.state.checkingSession}/>
@@ -55,7 +56,6 @@ class App extends Component {
             <SecuredRoute exact path="/parent/chores/:id" component={ChoreList} checkingSession={this.state.checkingSession}/>
             <SecuredRoute exact path="/parent/rewards" component={RewardList} checkingSession={this.state.checkingSession}/>
             <SecuredRoute exact path="/parent/rewards/level/:level" component={RewardList} checkingSession={this.state.checkingSession}/>
-            <Route path="/back" component={Callback} />
             <Route component={NoMatch} />
           </Switch>
 
