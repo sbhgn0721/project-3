@@ -22,11 +22,11 @@ const RewardForm = props => {
                     <div className="col-auto">
                         <button className="saveButton" onClick={props.handleSaveLevel1Reward}><i className="fas fa-save"></i></button>
                     </div>
-                    <div className="col-auto" onChange={props.rewardLevel1AnimationButtonShown}>
+                    <div className="col-auto" style={{display:props.showButton}} onChange={props.rewardLevel1AnimationButtonShown}>
                         <button className="btn btn-warning" id="rewardLevel1Animation" onClick={props.rewardLevel1Animation}>Claim your prize!</button>
                     </div>
                 </div>
-                <div>
+                <div >
                     <SpritesheetContainer/>
                 </div>
                 {props.level1ChoreList.map(item => {

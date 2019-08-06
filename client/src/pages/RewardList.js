@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import NavTabs from "../components/NavTabs/NavTabs";
 import RewardForm from "../components/RewardForm/RewardForm"
 import API from "../utils/API";
-import { set } from "mongoose";
-
 
 class RewardList extends Component {
 
@@ -13,10 +11,7 @@ class RewardList extends Component {
         rewardLevel3Name: "",
         level: "1",
         completion: "false",
-        
-        rewardLevel1AnimationButtonShown: "false",
-        rewardLevel2AnimationButtonShown: "false",
-        rewardLevel3AnimationButtonShown: "false",
+        showButton: "none",
         
         rewardList: [],
         level1ChoreList: [],
@@ -51,6 +46,11 @@ class RewardList extends Component {
                         console.log("level1CompletedChoreCount: ", level1CompletedChoreCount);
                         const level1ChoreCompletionStatus = res.data[0].chores.filter(item => item.completion === false).length === 0;
                         console.log("level1ChoreCompletionStatus: ", level1ChoreCompletionStatus);
+                        if (level1ChoreCompletionStatus) {
+                            this.setState({showButton:"block"})
+                        } else {
+                            this.setState({showButton:"none"})
+                        }
                     })
 
                 API.getChoreByLevel("2")
@@ -100,11 +100,11 @@ class RewardList extends Component {
             .catch(err => console.log(err))
     }
 
-    // this.handleLevel1RewardAnimationTrigger = this.handleLevel1RewardAnimationTrigger.bind(this);
-    
-    handleLevel1RewardAnimationTrigger = event => {
-        this.setState({rewardLevel1AnimationButtonShown: true});
-    }
+    // handleLevel1RewardAnimationTrigger = event => {
+    //     if (this.state.level1ChoreCompletionStatus) {
+    //         this.setState({showButton:block})
+    //     }
+    // }
 
     handleLevel2RewardNameChange = event => {
         this.setState({ rewardLevel2Name: event.target.value })
@@ -179,7 +179,8 @@ class RewardList extends Component {
                     rewardLevel2Name={this.state.rewardLevel2Name}
                     rewardLevel3Name={this.state.rewardLevel3Name}
                     completion={this.state.completion}
-
+                    showButton={this.state.showButton}
+                    
                     level1ChoreList={this.state.level1ChoreList}
                     handleLevel1RewardNameChange={this.handleLevel1RewardNameChange}
                     handleSaveLevel1Reward={this.handleSaveLevel1Reward}
