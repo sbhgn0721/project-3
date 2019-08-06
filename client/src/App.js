@@ -55,7 +55,7 @@ class App extends Component {
             <SecuredRoute exact path="/parent/chores/:id" component={ChoreList} checkingSession={this.state.checkingSession}/>
             <SecuredRoute exact path="/parent/rewards" component={RewardList} checkingSession={this.state.checkingSession}/>
             <SecuredRoute exact path="/parent/rewards/level/:level" component={RewardList} checkingSession={this.state.checkingSession}/>
-            <Route exact path="/callback" component={Callback} />
+            <SecuredRoute exact path="/callback" component={Callback} />
             <Route component={NoMatch} />
           </Switch>
 
