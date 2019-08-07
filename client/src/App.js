@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
 //import {Route, Switch, withRouter} from 'react-router-dom';
 
 import auth0Client from './utils/Auth';
@@ -21,21 +21,21 @@ import './App.css';
 // made a change
 
 
-class App extends React.Component {
-  
-
-  /*
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      checkingSession: true,
+      checkingSession: false,
     }
   }
 
   async componentDidMount() {
+    
+    console.log("props", this.props)
     if (this.props.location.pathname === '/callback') {
       console.log("in appjs compoent");
-      this.setState({ checkingSession: false });
+      this.setState({ checkingSession: false
+      });
       return;
     }
     try {
@@ -46,49 +46,32 @@ class App extends React.Component {
     }
     this.setState({ checkingSession: false });
   }
-  */
 
   render() {
     return (
-      <Router>
         <div>
           <NavTabs />
 
 
           <Switch>
-            
-            
             <Route exact path="/" component={Welcome} />
             <SecuredRoute exact path="/role" component={Role}
-
-            /*
             checkingSession={this.state.checkingSession} 
-            */
             />
             <SecuredRoute exact path="/parent" component={Parent} 
-            /*
             checkingSession={this.state.checkingSession}
-            */
             />
             <SecuredRoute exact path="/parent/chores" component={ChoreList}
-            /*
             checkingSession={this.state.checkingSession}
-            */
             />
             <SecuredRoute exact path="/parent/chores/:id" component={ChoreList} 
-            /*
             checkingSession={this.state.checkingSession}
-            */
             />
             <SecuredRoute exact path="/parent/rewards" component={RewardList} 
-            /*
             checkingSession={this.state.checkingSession}
-            */
             />
             <SecuredRoute exact path="/parent/rewards/level/:level" component={RewardList} 
-            /*
             checkingSession={this.state.checkingSession}
-            */
             />
             <Route exact path="/callback" component={Callback} />
 
@@ -96,9 +79,8 @@ class App extends React.Component {
           </Switch>
 
         </div>
-      </Router>
     );
   }
 }
 
-export default App;
+export default withRouter(App);

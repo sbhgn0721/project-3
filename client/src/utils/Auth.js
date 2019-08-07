@@ -9,19 +9,19 @@ class Auth {
       domain: 'young-wave-7408.auth0.com',
       audience: 'https://young-wave-7408.auth0.com/api/v2/',
       clientID: 'mO4o82RWTjPlqoNtm_Ub9zIBk7VRKoin',
-      responseType: 'code',
-      redirectUri: 'https://still-tor-34851.herokuapp.com/callback',
+      responseType: 'token',
+      redirectUri: 'http://localhost:3000/callback',
       scope: 'openid profile'
     });
 
     console.log("rung authorize", this.auth0);
-
 
     this.getProfile = this.getProfile.bind(this);
     this.handleAuthentication = this.handleAuthentication.bind(this);
     this.isAuthenticated = this.isAuthenticated.bind(this);
     this.signIn = this.signIn.bind(this);
     this.signOut = this.signOut.bind(this);
+    this.test = new Date().getTime();
   }
 
   getProfile() {
@@ -33,7 +33,7 @@ class Auth {
   }
 
   isAuthenticated() {
-    return new Date().getTime() < this.expiresAt;
+    return new Date().getTime() < this.test;
   }
 
   signIn() {
@@ -42,11 +42,12 @@ class Auth {
 
   handleAuthentication() {
     return new Promise((resolve, reject) => {
-      this.auth0.parseHash((err, authResult) => {
+      this.auth0.parseHash({hash: window.location.hash},(err, authResult) => {
+        console.log('auth result',authResult, 'error?', err);
         if (err) return reject(err);
-        if (!authResult || !authResult.idToken) {
-          return reject(err);
-        }
+        // if (!authResult || !authResult.idToken) {
+        //   return reject(err);
+        // }
         this.setSession(authResult);
         resolve();
       });
@@ -57,7 +58,8 @@ class Auth {
     this.idToken = authResult.idToken;
     this.profile = authResult.idTokenPayload;
     // set the time that the id token will expire at
-    this.expiresAt = authResult.idTokenPayload.exp * 1000;
+    this.expiresAt = new Date().getTime()+authResult.expiresIn*1000;
+    this.test = this.expiresAt;
   }
 
   signOut() {

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+
 import auth0Client from '../../utils/Auth';
 
 function SecuredRoute(props) {
@@ -17,4 +19,4 @@ function SecuredRoute(props) {
   );
 }
 
-export default SecuredRoute;
+export default withRouter(SecuredRoute);
