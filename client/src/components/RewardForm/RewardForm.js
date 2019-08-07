@@ -5,12 +5,12 @@ import Moment from 'moment';
 const RewardForm = props => {
     return (
         <div>
-            <a href="/parent/chores"><button type="submit" className="btn btn-success" id="chore-list-button">Chore List</button></a>
+            <a href="/parent/chores"><button type="submit" className="btn btn-secondary" id="chore-list-button"><p2><strong>Chore List</strong></p2></button></a>
 
             <form id="rewardForm">
                 <div className="form-group form-row">
                     <div className="col-auto">
-                        <label htmlFor="level1Reward">Level 1 Reward</label>
+                        <label id="levelONE" htmlFor="level1Reward"><p1><strong>Level 1</strong></p1></label>
                     </div>
                     <div className="col-8">
                         <input type="text" className="form-control rewardFormInput" id="level1Reward"
@@ -42,7 +42,7 @@ const RewardForm = props => {
 
                 <div className="form-group form-row" id="level2RewardRow">
                     <div className="col-auto">
-                        <label htmlFor="level2Reward">Level 2 Reward</label>
+                        <label id="levelTWO" htmlFor="level2Reward"><p1><strong>Level 2 Reward</strong></p1></label>
                     </div>
                     <div className="col-8">
                         <input type="text" className="form-control rewardFormInput" id="level2Reward"
@@ -74,7 +74,7 @@ const RewardForm = props => {
 
                 <div className="form-group form-row" id="level3RewardRow">
                     <div className="col-auto">
-                        <label htmlFor="level3Reward">Level 3 Reward</label>
+                        <label id="levelTHREE" htmlFor="level3Reward"><p1><strong>Level 3 Reward</strong></p1></label>
                     </div>
                     <div className="col-8">
                         <input type="text" className="form-control rewardFormInput" id="level3Reward"

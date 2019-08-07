@@ -14,7 +14,7 @@ const ChoreTableRow = props => {
                     return (
                         <tbody>
                             <tr key={index}>
-                                <td className="tableIndex">{index + 1}</td>
+                                <td className="tableIndex"><strong>{index + 1}</strong></td>
                                 <td className="tableChoreName">{item.choreName}</td>
                                 <td className="tableChoreLevel">{item.level}</td>
                                 <td className="tableChoreDueDate">{Moment(item.dueDate).utc().format('YYYY-MM-DD')}</td>
