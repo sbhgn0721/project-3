@@ -52,7 +52,6 @@ class RewardList extends Component{
                     .then(res=>{
                         console.log("is it here", res.data[0].chores);
                         this.setState({level3ChoreList: res.data[0].chores})
-
                     })
 
             })
@@ -167,13 +166,6 @@ class RewardList extends Component{
                 handleLevel3RewardNameChange ={this.handleLevel3RewardNameChange}
                 handleSaveLevel3Reward ={this.handleSaveLevel3Reward}
                 />
-              
-
-                
-
-
-                
-                
             </div>
 
         )

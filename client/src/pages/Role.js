@@ -3,8 +3,7 @@ import NavTabs from "../components/NavTabs/NavTabs";
 import Role from "../components/Role/Role";
 
 
-
-class Parent extends Component {
+class RoleForm extends Component {
     render() {
         return (
             <div>
@@ -18,4 +17,4 @@ class Parent extends Component {
 
 }
 
-export default Role
+export default RoleForm;
