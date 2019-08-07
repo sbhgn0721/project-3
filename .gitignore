@@ -1,9 +1,39 @@
+*Thanks to fine folks -> https://github.com/facebook/react/blob/master/.gitignore
+*And other fine folks -> https://guide.freecodecamp.org/git/gitignore/
+#until MVP is complete
+package-lock.json
+client/package-lock.json
+# Ignore Mac system files, including redundancies since case-sensitivity matters, and I've seen each spelling referenced online.
+.DS_STORE
+.DS_Store
 .DS_store
-
-# dependencies
-node_modules/
-
+# Ignore node_modules folder
 node_modules
-node_modules
-node_modules
-node_modules
+# Ignore all text files
+*.txt
+# Ignore files related to API keys
+.env
+# Ignore SASS config files
+.sass-cache
+scripts/flow/*/.flowconfig
+*~
+*.pyc
+.grunt
+_SpecRunner.html
+__benchmarks__
+build/
+remote-repo/
+coverage/
+.module-cache
+fixtures/dom/public/react-dom.js
+fixtures/dom/public/react.js
+test/the-files-to-test.generated.js
+*.log*
+chrome-user-data
+*.sublime-project
+*.sublime-workspace
+.idea
+*.iml
+.vscode
+*.swp
+*.swo
