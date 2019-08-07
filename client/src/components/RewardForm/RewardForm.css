@@ -33,6 +33,11 @@ p1 {
     font-size: 14px;
     
 }
+
+/**{
+    border-radius: 5px;
+    border: 1px solid blue;
+}*/
 #rewardForm {
     margin-left: 15%;
     margin-top: -2%;

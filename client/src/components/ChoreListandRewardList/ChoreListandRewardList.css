@@ -10,7 +10,7 @@
 
 #rewardList-button {
     position: relative;
-    left: 32vw;
+    left: 31vw;
     top: 15vw;
     background: url("badge.jpg");
     background-size: cover;
@@ -20,12 +20,15 @@
     margin-left: 50px;
     
 }
-p1 {
+
+p1{
+
     position: relative;
-    top: 9vw;
+    top: 9vh;
     color: black;
     font-weight: bold;
 }
+
 #reward-list-button {
     background: url ("")
 }

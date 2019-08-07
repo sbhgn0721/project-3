@@ -4,6 +4,7 @@ import "./ChoreListandRewardList.css";
 const ChoreListandRewardList =() =>(
     
         <div>
+
             {/* // eslint-disable-next-line */}
             <a href="/parent/chores/" className="btn btn-secondary" id="choreList-button"><p1><strong>Chore List</strong></p1></a>
             {/* // eslint-disable-next-line */}
