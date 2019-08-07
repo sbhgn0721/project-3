@@ -3,10 +3,11 @@ import React, { Component } from 'react';
 import auth0Client from './Auth';
 
 class Callback extends Component {
-  async componentDidMount() {
+  componentDidMount() {
     console.log('here in call back');
-    await auth0Client.handleAuthentication();
-    this.props.history.replace('/role');
+    auth0Client.handleAuthentication().then(function(){
+      this.props.history.replace('/role');
+    });
   }
 
   render() {
