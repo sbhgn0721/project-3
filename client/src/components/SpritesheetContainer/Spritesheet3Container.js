@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Spritesheet from 'react-responsive-spritesheet';
-import monkey3 from '../Sprites/Monkeys/monkey1.png'
+import monkey3 from '../Sprites/Monkeys/monkey3.png'
 import './SpritesheetContainer.css';
 
 export default class Spritesheet3Container extends Component {

@@ -28,9 +28,9 @@ const RewardForm = props => {
                     </div>
                     <div className="col-auto" style={{ display: props.showRewardLevel1Button }} >
                         <div className="btn btn-warning discoEffect" id="reward1-disco-button">
-                            <AnimationToggle />
+                            <AnimationToggle toggleRewardLevelButton={props.toggleRewardLevelButton} level={1} />
+                            <Spritesheet1Container style={{ display: props.showRewardLevelAnimation }} level={1} />
                         </div>
-                        <Spritesheet1Container style={{ display: props.showRewardLevel1Animation }} />
                     </div>
                 </div>
                 {props.level1ChoreList.map(item => {
@@ -64,9 +64,9 @@ const RewardForm = props => {
                     </div>
                     <div className="col-auto" style={{ display: props.showRewardLevel2Button }} >
                         <div className="btn btn-warning discoEffect" id="reward2-disco-button">
-                            <AnimationToggle />
+                            <AnimationToggle toggleRewardLevelButton={props.toggleRewardLevelButton} level={2} />
                         </div>
-                        <Spritesheet2Container style={{ display: props.showRewardLevel2Animation }} />
+                        <Spritesheet2Container style={{ display: props.showRewardLevelAnimation }} level={2} />
                     </div>
 
                 </div>
@@ -101,9 +101,9 @@ const RewardForm = props => {
                     </div>
                     <div className="col-auto" style={{ display: props.showRewardLevel3Button }} >
                         <div className="btn btn-warning discoEffect" id="reward3-disco-button">
-                            <AnimationToggle />
+                            <AnimationToggle toggleRewardLevelButton={props.toggleRewardLevelButton} level={3} />
                         </div>
-                        <Spritesheet3Container style={{ display: props.showRewardLevel3Animation }} />
+                        <Spritesheet3Container style={{ display: props.showRewardLevelAnimation }} level={3} />
                     </div>
 
                 </div>

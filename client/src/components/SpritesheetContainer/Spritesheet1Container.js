@@ -23,13 +23,10 @@ export default class Spritesheet1Container extends Component {
                     fps={11}
                     autoplay={true}
                     loop={true}
+                    
                     // //// for hover over functionality
-                    onMouseEnter={spritesheet => {
-                        spritesheet.play();
-                    }}
-                    onMouseLeave={spritesheet => {
-                        spritesheet.pause();
-                    }}
+                    onMouseEnter={spritesheet => { spritesheet.play(); }}
+                    onMouseLeave={spritesheet => { spritesheet.pause(); }}
                     background={`https://raw.githubusercontent.com/danilosetra/react-responsive-spritesheet/master/assets/images/examples/sprite-image-background.png`}
                     backgroundSize={`cover`}
                     backgroundRepeat={`no-repeat`}

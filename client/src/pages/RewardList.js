@@ -15,6 +15,10 @@ export default class RewardList extends Component {
         showRewardLevel1Button: "none",
         showRewardLevel2Button: "none",
         showRewardLevel3Button: "none",
+
+        showRewardLevel1Animation: "none",
+        showRewardLevel2Animation: "none",
+        showRewardLevel3Animation: "none",
         
         rewardList: [],
         level1ChoreList: [],
@@ -177,6 +181,53 @@ export default class RewardList extends Component {
 
     }
 
+    toggleRewardLevelButton = (level) => {
+        const index = "showRewardLevel" + level + "Button";
+        let newState = "block";
+        if(this.state[index] !== "none") {
+            newState = "none";
+        }
+
+        console.log("Pre reward toggle state", this.state)
+
+        this.setState({
+            [index]: newState
+        }, () => {
+            console.log("Post reward toggle state", this.state)
+        });
+    }
+
+    toggleRewardLevelButton = (level) => {
+        const indexButton = "showRewardLevel" + level + "Button";
+        const indexAnimation = "showRewardLevel" + level + "Animation";
+        let newButtonState = "block";
+        let newAnimationState = "block";
+        
+        if (this.state[indexButton] !== "none") {
+            newButtonState = "none";
+        }
+
+        console.log("Pre reward toggle state", this.state)
+
+        if (this.state[indexAnimation] !== "none") {
+            newAnimationState = "none";
+        }
+
+        console.log("Pre reward animation state", this.state)
+
+        this.setState({
+            [indexButton]: newButtonState
+        }, () => {
+            console.log("Post reward toggle state", this.state)
+        });
+        this.setState({
+            [indexAnimation]: newAnimationState
+        }, () => {
+            console.log("Post animation toggle state", this.state)
+        });
+    }
+
+
     render() {
         return (
             <div>
@@ -186,10 +237,15 @@ export default class RewardList extends Component {
                     rewardLevel2Name={this.state.rewardLevel2Name}
                     rewardLevel3Name={this.state.rewardLevel3Name}
                     completion={this.state.completion}
+
+                    toggleRewardLevelButton={this.toggleRewardLevelButton}
                     showRewardLevel1Button={this.state.showRewardLevel1Button}
                     showRewardLevel2Button={this.state.showRewardLevel2Button}
                     showRewardLevel3Button={this.state.showRewardLevel3Button}
-                    
+                    showRewardLevel1Animation={this.state.showRewardLevel1Animation}
+                    showRewardLevel2Animation={this.state.showRewardLevel2Animation}
+                    showRewardLevel3Animation={this.state.showRewardLevel3Animation}
+
                     level1ChoreList={this.state.level1ChoreList}
                     handleLevel1RewardNameChange={this.handleLevel1RewardNameChange}
                     handleSaveLevel1Reward={this.handleSaveLevel1Reward}
