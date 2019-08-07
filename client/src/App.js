@@ -20,8 +20,11 @@ import './App.css';
 
 // made a change
 
+
 class App extends React.Component {
   
+
+  /*
   constructor(props) {
     super(props);
     this.state = {
@@ -43,7 +46,7 @@ class App extends React.Component {
     }
     this.setState({ checkingSession: false });
   }
-  
+  */
 
   render() {
     return (
@@ -57,17 +60,35 @@ class App extends React.Component {
             
             <Route exact path="/" component={Welcome} />
             <SecuredRoute exact path="/role" component={Role}
+
+            /*
             checkingSession={this.state.checkingSession} 
+            */
             />
-            <SecuredRoute exact path="/parent" component={Parent} checkingSession={this.state.checkingSession}
+            <SecuredRoute exact path="/parent" component={Parent} 
+            /*
+            checkingSession={this.state.checkingSession}
+            */
             />
-            <SecuredRoute exact path="/parent/chores" component={ChoreList} checkingSession={this.state.checkingSession}
+            <SecuredRoute exact path="/parent/chores" component={ChoreList}
+            /*
+            checkingSession={this.state.checkingSession}
+            */
             />
-            <SecuredRoute exact path="/parent/chores/:id" component={ChoreList} checkingSession={this.state.checkingSession}
+            <SecuredRoute exact path="/parent/chores/:id" component={ChoreList} 
+            /*
+            checkingSession={this.state.checkingSession}
+            */
             />
-            <SecuredRoute exact path="/parent/rewards" component={RewardList} checkingSession={this.state.checkingSession}
+            <SecuredRoute exact path="/parent/rewards" component={RewardList} 
+            /*
+            checkingSession={this.state.checkingSession}
+            */
             />
-            <SecuredRoute exact path="/parent/rewards/level/:level" component={RewardList} checkingSession={this.state.checkingSession}
+            <SecuredRoute exact path="/parent/rewards/level/:level" component={RewardList} 
+            /*
+            checkingSession={this.state.checkingSession}
+            */
             />
             <Route exact path="/callback" component={Callback} />
 
