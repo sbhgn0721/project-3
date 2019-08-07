@@ -11,7 +11,7 @@
 
 #rewardList-button {
     position: relative;
-    left: 32vw;
+    left: 31vw;
     top: 15vw;
     background: url("badge.jpg");
     background-size: cover;
@@ -20,9 +20,12 @@
     margin-top: 150px;
     margin-left: 50px;
 }
+
 .parentButton {
+
     position: relative;
-    top: 9vw;
+    top: 9vh;
     color: black;
+
     font-weight: bold;
 }

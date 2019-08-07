@@ -259,7 +259,6 @@ export default class RewardList extends Component {
                     handleLevel3RewardNameChange={this.handleLevel3RewardNameChange}
                     handleSaveLevel3Reward={this.handleSaveLevel3Reward}
                 />
-
             </div>
 
         )
