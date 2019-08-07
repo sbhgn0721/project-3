@@ -54,22 +54,23 @@ class App extends React.Component {
 
           <Switch>
             
-            <Route path="/back" component={Callback} />
             
             <Route exact path="/" component={Welcome} />
-            <Route exact path="/role" component={Role}
+            <SecuredRoute exact path="/role" component={Role}
             checkingSession={this.state.checkingSession} 
             />
-            <Route exact path="/parent" component={Parent} checkingSession={this.state.checkingSession}
+            <SecuredRoute exact path="/parent" component={Parent} checkingSession={this.state.checkingSession}
             />
-            <Route exact path="/parent/chores" component={ChoreList} checkingSession={this.state.checkingSession}
+            <SecuredRoute exact path="/parent/chores" component={ChoreList} checkingSession={this.state.checkingSession}
             />
-            <Route exact path="/parent/chores/:id" component={ChoreList} checkingSession={this.state.checkingSession}
+            <SecuredRoute exact path="/parent/chores/:id" component={ChoreList} checkingSession={this.state.checkingSession}
             />
-            <Route exact path="/parent/rewards" component={RewardList} checkingSession={this.state.checkingSession}
+            <SecuredRoute exact path="/parent/rewards" component={RewardList} checkingSession={this.state.checkingSession}
             />
-            <Route exact path="/parent/rewards/level/:level" component={RewardList} checkingSession={this.state.checkingSession}
+            <SecuredRoute exact path="/parent/rewards/level/:level" component={RewardList} checkingSession={this.state.checkingSession}
             />
+            <Route exact path="/callback" component={Callback} />
+
             <Route component={NoMatch} />
           </Switch>
 
