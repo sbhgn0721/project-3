@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Route, Switch, withRouter} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import auth0Client from './utils/Auth';
 import Callback from './utils/Callback';
 import NavTabs from "./components/NavTabs/NavTabs";
@@ -64,4 +64,4 @@ class App extends Component {
   }
 }
 
-export default withRouter(App);
+export default App;
