@@ -1,13 +1,9 @@
-/**{
-    border-radius: 5px;
-    border: 1px solid blue;
-}*/
-#rewardForm {
+#childForm {
     margin-left: 15%;
-    margin-top: -2%;
+    margin-top: 7%;
 }
 
-.rewardFormInput {
+.childFormInput {
     width: 60%;
     margin-left: 10%;
    
@@ -52,3 +48,6 @@ span:after{
     margin-top: 8%;
     margin-left: 80%;
 }
+ #calendarHolder{
+     height: 400px;
+ }
