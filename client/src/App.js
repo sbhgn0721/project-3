@@ -10,6 +10,7 @@ import ChoreList from "./pages/ChoreList";
 import RewardList from "./pages/RewardList";
 import NoMatch from "./pages/NoMatch";
 import Role from "./pages/Role";
+import Child from "./pages/Child"
 //import LogForm from "./components/LogForm";
 //import Header from "./components/Header";
 //import Wallpaper from "./components/Wallpaper";
@@ -58,6 +59,11 @@ class App extends React.Component {
             <Route exact path="/" component={Welcome} />
             <Route exact path="/role" component={Role}
             /*checkingSession={this.state.checkingSession} */
+            />
+            <Route exact path="/child" component={Child} 
+            /*
+            checkingSession={this.state.checkingSession}
+            */
             />
             <Route exact path="/parent" component={Parent} /*checkingSession={this.state.checkingSession}*/
             />

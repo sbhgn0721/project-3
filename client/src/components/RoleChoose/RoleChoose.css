@@ -1,12 +1,32 @@
 #parentPage-button {
-    margin-top: 150px;
-    margin-left: 500px;
-    width: 120px;
+    background: url("parents.jpg");
+    position: fixed;
+    top: 10vw;
+    left: 45vw;
+    width: 134px;
+    height: 130px;
+    background-size: cover;
 
 }
 
 #childPage-button {
-    margin-top: 150px;
-    margin-left: 50px;
-    width: 110px;
+    background: url("child1.jpg");
+    position: relative;
+    width: 133px;
+    height: 130px;
+    left: 45vw;
+    top: 25vw;
+    background-size: cover;
+ 
+}
+#tree {
+    position: absolute;
+    left: 10vw;
+    bottom: -2vw;
+    height: 540px;
+}
+p1 {
+    color: black;
+    position: relative;
+    top: 9vw;
 }

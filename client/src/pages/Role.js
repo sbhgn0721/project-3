@@ -2,12 +2,14 @@ import React, { Component } from "react";
 import NavTabs from "../components/NavTabs/NavTabs";
 import RoleChoose from "../components/RoleChoose/RoleChoose";
 
-class Role extends Component {
+
+class RoleForm extends Component {
     render() {
         return (
             <div>
                 <NavTabs />
                 <RoleChoose />
+                
             </div>
         )
     }
@@ -15,4 +17,4 @@ class Role extends Component {
 
 }
 
-export default Role
+export default RoleForm;

@@ -6,12 +6,11 @@
     width: 134px;
     height: 130px;
     background-size: cover;
-
 }
 
 #rewardList-button {
     position: relative;
-    left: 32vw;
+    left: 31.9vw;
     top: 15vw;
     background: url("badge.jpg");
     background-size: cover;
@@ -19,10 +18,18 @@
     height: 130px;
     margin-top: 150px;
     margin-left: 50px;
+    
 }
-span {
+
+p1{
+    
     position: relative;
-    top: 9vw;
+    top: 9vh;
     color: black;
     font-weight: bold;
 }
+
+#reward-list-button {
+    background: url ("")
+}
+
