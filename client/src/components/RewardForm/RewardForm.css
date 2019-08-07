@@ -49,24 +49,40 @@ span:after{
     margin-left: 80%;
 }
 
+.discoEffect { transition: all .2s ease-in-out; }
+
 .discoEffect:hover {
     background:
-        radial-gradient(
-            khaki 40px,
-            transparent 0,
-            transparent 100%
+    radial-gradient(
+        khaki 40px,
+        transparent 0,
+        transparent 100%
         ),
         radial-gradient(
             skyblue 40px,
             transparent 0,
             transparent 100%
-        ),
-        radial-gradient(
-            pink 40px,
-            transparent 0,
-            transparent 100%
-        ), snow;
-    background-blend-mode: multiply;
-    background-size: 100px 100px;
-    background-position: 0 0, 33px 33px, -33px -33px;
+            ),
+            radial-gradient(
+                pink 40px,
+                transparent 0,
+                transparent 100%
+                ), snow;
+                background-blend-mode: multiply;
+                background-size: 100px 100px;
+                background-position: 0 0, 33px 33px, -33px -33px;
+    -webkit-animation: fadeinout 4s linear forwards;
+    /* animation: fadeinout 4s linear forwards; */
+    transform: scale(1.2);
 }
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: .5; }
+  50% { opacity: 1; }
+}
+
+/* fadeout doesn't makes it disappear */
+/* @keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+} */

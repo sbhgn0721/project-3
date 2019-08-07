@@ -11,7 +11,8 @@ export default class AnimationToggle extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick() {
+    handleClick = event => {
+        event.preventDefault();
         this.setState(state => ({
             isToggleOn: !state.isToggleOn,
             showAnimation:"block"
