@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import NavTabs from "../components/NavTabs/NavTabs";
-import Role from "../components/Role/Role";
+import RoleChoose from "../components/RoleChoose/RoleChoose";
 
-class Parent extends Component {
+class Role extends Component {
     render() {
         return (
             <div>
                 <NavTabs />
-                <Role />
+                <RoleChoose />
             </div>
         )
     }
