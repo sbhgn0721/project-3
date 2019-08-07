@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "./ChoreListandRewardList.css";
 
