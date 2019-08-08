@@ -10,7 +10,7 @@ class Auth {
       audience: 'https://young-wave-7408.auth0.com/api/v2/',
       clientID: 'mO4o82RWTjPlqoNtm_Ub9zIBk7VRKoin',
       responseType: 'token',
-      redirectUri: 'http://localhost:3000/callback',
+      redirectUri: 'https://still-tor-34851.herokuapp.com/callback',
       scope: 'openid profile'
     });
 
