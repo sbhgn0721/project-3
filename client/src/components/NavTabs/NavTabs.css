@@ -3,7 +3,10 @@
     background-color: purple;
     height: 70px;
 }
+.logo {
+    font-family: 'Barriecito', cursive;
 
+}
 .navbar li{
     display: inline-block;
     padding-top: 4%;

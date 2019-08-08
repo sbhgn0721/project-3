@@ -13,6 +13,14 @@ class RewardList extends Component{
         level: "1",
         completion: "false",
 
+        showRewardLevel1Button: "none",
+        showRewardLevel2Button: "none",
+        showRewardLevel3Button: "none",
+
+        showRewardLevel1Animation: "rrs-container blind",
+        showRewardLevel2Animation: "rrs-container blind",
+        showRewardLevel3Animation: "rrs-container blind",
+
         rewardList: [],
         level1ChoreList: [],
         level2ChoreList: [],
@@ -40,21 +48,48 @@ class RewardList extends Component{
                     .then(res => {
                         console.log("is it here", res.data[0].chores);
                         this.setState({level1ChoreList: res.data[0].chores})
+                        const level1TotalChoreCount = res.data[0].chores.length;
+                        const level1CompletedChoreCount = res.data[0].chores.filter(item => item.completion === true).length;
+                        const level1ChoreCompletionStatus = res.data[0].chores.filter(item => item.completion === false).length === 0;
+                        if (level1ChoreCompletionStatus === true) {
+                            this.setState({showRewardLevel1Button:"block"})
+                        } else {
+                            this.setState({showRewardLevel1Button:"none"})
+                        }
+                    
                     })
 
                 API.getChoreByLevel("2")
                     .then(res=>{
                         console.log("is it here", res.data[0].chores);
                         this.setState({level2ChoreList: res.data[0].chores})
-
+                        const level2TotalChoreCount = res.data[0].chores.length;
+                        const level2CompletedChoreCount = res.data[0].chores.filter(item => item.completion === true).length;
+                        const level2ChoreCompletionStatus = res.data[0].chores.filter(item => item.completion === false).length === 0;
+                        if (level2ChoreCompletionStatus === true) {
+                            this.setState({showRewardLevel2Button:"block"})
+                        } else {
+                            this.setState({showRewardLevel2Button:"none"})
+                        }
                     })
+
+                 
                 API.getChoreByLevel("3")
                     .then(res=>{
                         console.log("is it here", res.data[0].chores);
                         this.setState({level3ChoreList: res.data[0].chores})
+                        const level3TotalChoreCount = res.data[0].chores.length;
+                        const level3CompletedChoreCount = res.data[0].chores.filter(item => item.completion === true).length;
+                        const level3ChoreCompletionStatus = res.data[0].chores.filter(item => item.completion === false).length === 0;
+                        if (level3ChoreCompletionStatus === true) {
+                            this.setState({showRewardLevel3Button:"block"})
+                        } else {
+                            this.setState({showRewardLevel3Button:"none"})
+                        }
+                    })
                     })
 
-            })
+           
            .catch(err => console.log(err))
 
     }
@@ -137,9 +172,30 @@ class RewardList extends Component{
         .then(res => this.componentDidMount())
         .catch(err =>console.log(err))
         
-
     }
 
+    toggleRewardLevelButton = (level) => {
+        const indexButton = "showRewardLevel" + level + "Button";
+        const indexAnimation = "showRewardLevel" + level + "Animation";
+        let newButtonState = "block";
+        let newAnimationState = "rrs-container sight";
+        
+        if (this.state[indexButton] !== "none") {
+            newButtonState = "none";
+        }
+
+        if (this.state[indexAnimation] !== "rrs-container blind") {
+            
+            newAnimationState = "rrs-container blind";
+        }
+
+        this.setState({
+            [indexAnimation]: newAnimationState
+        }, () => {
+            /*console.log("Post animation toggle state", this.state.showRewardLevel1Animation);
+            alert("Post animation toggle state" + this.state.showRewardLevel1Animation);*/
+        });
+    }
 
 
     render(){
@@ -152,6 +208,13 @@ class RewardList extends Component{
                 rewardLevel3Name = {this.state.rewardLevel3Name}
                 completion = {this.state.completion}
 
+                toggleRewardLevelButton={this.toggleRewardLevelButton}
+                showRewardLevel1Button={this.state.showRewardLevel1Button}
+                showRewardLevel2Button={this.state.showRewardLevel2Button}
+                showRewardLevel3Button={this.state.showRewardLevel3Button}
+                showRewardLevel1Animation={this.state.showRewardLevel1Animation}
+                showRewardLevel2Animation={this.state.showRewardLevel2Animation}
+                showRewardLevel3Animation={this.state.showRewardLevel3Animation}
 
                 level1ChoreList = {this.state.level1ChoreList}
                 handleLevel1RewardNameChange ={this.handleLevel1RewardNameChange}
@@ -172,4 +235,4 @@ class RewardList extends Component{
     }
 }
 
-export default RewardList
+export default RewardList;

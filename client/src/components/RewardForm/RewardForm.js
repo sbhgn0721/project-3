@@ -109,4 +109,4 @@ const RewardForm = props => {
     )
 }
 
-export default RewardForm
+export default RewardForm;
