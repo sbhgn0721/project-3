@@ -63,6 +63,7 @@ class Auth {
   }
 
   signOut() {
+    localStorage.test=0;
     this.auth0.logout({
       returnTo: 'https://still-tor-34851.herokuapp.com',
       clientID: 'mO4o82RWTjPlqoNtm_Ub9zIBk7VRKoin',
