@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, withRouter } from 'react-router-dom';
 import "./Role.css";
 import palmtree from "./palmtree.png";
 
@@ -19,4 +20,4 @@ const Role =() => (
     )
 
 
-export default Role;
+export default Role

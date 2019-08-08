@@ -8,12 +8,15 @@ function NavTabs(props) {
         auth0Client.signOut();
         props.history.replace('/');
     };
+    
 
     return (
         <nav className="navbar navbar-dark fixed-top">
-            <Link className="navbar-brand" to="/">
+            <Link className="navbar-brand" to="/role">
                 <p className="logo">Monkey See, Monkey 2 Do</p>
           </Link>
+
+          
             {
                 // logic for unauthenticated v authenticated user experience
                 !auth0Client.isAuthenticated() &&
@@ -22,11 +25,12 @@ function NavTabs(props) {
             {
                 auth0Client.isAuthenticated() &&
                 <div>
-                    <label className="mr-2 text-white">{auth0Client.getProfile().name}</label>
+                    {/* <label className="mr-2 text-white">{auth0Client.getProfile().name}</label> */}
                     <button className="btn btn-dark" onClick={() => { signOut() }}>Sign Out</button>
                 </div>
                 
             }
+
         </nav>
     );
 

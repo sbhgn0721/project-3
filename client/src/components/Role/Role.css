@@ -1,6 +1,6 @@
 #parentPage-button {
     background: url("parents.jpg");
-    position: fixed;
+    position: relative;
     top: 10vw;
     left: 45vw;
     width: 134px;
@@ -14,7 +14,7 @@
     position: relative;
     width: 133px;
     height: 130px;
-    left: 45vw;
+    left: 35.6vw;
     top: 25vw;
     background-size: cover;
  
