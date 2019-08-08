@@ -11,6 +11,7 @@ import ChoreList from "./pages/ChoreList";
 import RewardList from "./pages/RewardList";
 import NoMatch from "./pages/NoMatch";
 import Role from "./pages/Role";
+import Child from "./pages/Child"
 //import LogForm from "./components/LogForm";
 //import Header from "./components/Header";
 //import Wallpaper from "./components/Wallpaper";

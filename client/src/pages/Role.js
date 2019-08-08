@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import NavTabs from "../components/NavTabs/NavTabs";
-import RoleChoose from "../components/RoleChoose/RoleChoose";
+import Role from "../components/Role/Role";
 
-class Role extends Component {
+class RoleForm extends Component {
     componentDidMount = () => {
         const scope = this;
     }
@@ -10,7 +10,8 @@ class Role extends Component {
         return (
             <div>
                 <NavTabs />
-                <RoleChoose />
+                <Role />
+                
             </div>
         )
     }
@@ -18,4 +19,4 @@ class Role extends Component {
 
 }
 
-export default Role
+export default RoleForm;

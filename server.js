@@ -12,6 +12,8 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"))
 
 }
+//line removed for pull request for child page
+//app.use(express.static("./client/build"));
 
 app.use(routes);
 

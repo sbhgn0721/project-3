@@ -6,7 +6,6 @@
     width: 134px;
     height: 130px;
     background-size: cover;
-
 }
 
 #rewardList-button {
@@ -19,10 +18,20 @@
     height: 130px;
     margin-top: 150px;
     margin-left: 50px;
+    
 }
-span {
+
+p1{
     position: relative;
-    top: 9vw;
+    top: 9vh;
     color: black;
     font-weight: bold;
+}
+
+#reward-list-button {
+    background: url ("")
+}
+
+#addChoreForm {
+    margin-left: 5%;
 }

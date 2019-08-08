@@ -1,3 +1,38 @@
+
+#levelONE {
+    /* position: relative; */
+    /* left: 4vw; */
+    /* bottom: 2vw; */
+    /* background: url("levelONE.jpg"); */
+    /* width: 64px; */
+    /* height: 62px; */
+    /* background-size: cover; */
+
+}
+#levelTWO {
+    /* position: relative; */
+    /* left: 4vw; */
+    /* bottom: 2vw; */
+    /* background: url("levelTWO.jpg"); */
+    /* width: 64px; */
+    /* height: 62px; */
+    /* background-size: cover; */
+}
+#levelTHREE {
+    /* position: relative; */
+    /* left: 4vw; */
+    /* bottom: 2vw; */
+    /* background: url("levelTHREE.jpg"); */
+    /* width: 64px; */
+    /* height: 62px; */
+    /* background-size: cover; */
+}
+p1 {
+    /* position: relative; */
+    /* left: 8px; */
+    font-size: 14px;
+}
+
 #rewardForm {
     margin-left: 15%;
     margin-top: -2%;
@@ -25,12 +60,10 @@
     margin-top: 10%;
 }
 
-
-
 .choreCheckListItem {
     border-bottom: 1px solid #ced4da;
     width: 52%;
-    margin-top: 0.5%;
+    margin-top: 8%;
     margin-left: 2%;
 }
 
@@ -45,6 +78,15 @@ span:after{
 }
 
 #chore-list-button {
-    margin-top: 8%;
+    background: url("bulletlist.jpg");
+    position: relative;
+    background-size: cover;
+    width: 134px;
+    height: 130px;
+    top: 8vw;
     margin-left: 80%;
+}
+
+.input-group {
+    text-decoration: none;
 }
