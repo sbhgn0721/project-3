@@ -10,7 +10,7 @@
 
 #rewardList-button {
     position: relative;
-    left: 31vw;
+    left: 32vw;
     top: 15vw;
     background: url("badge.jpg");
     background-size: cover;
@@ -22,7 +22,6 @@
 }
 
 p1{
-    
     position: relative;
     top: 9vh;
     color: black;
@@ -33,3 +32,6 @@ p1{
     background: url ("")
 }
 
+#addChoreForm {
+    margin-left: 5%;
+}

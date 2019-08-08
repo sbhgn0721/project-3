@@ -1,6 +1,7 @@
 #childForm {
     margin-left: 15%;
-    margin-top: 7%;
+    /* margin-top: 7%; */
+    padding-top: 130px;
 }
 
 .childFormInput {
@@ -18,24 +19,29 @@
 }
 
 #level2RewardRow{
-    margin-top: 10%;
+    margin-top: 4%;
+    /* margin-top: 10%; */
+
 }
 
 #level3RewardRow {
-    margin-top: 10%;
+    margin-top: 4%;
+    /* margin-top: 10%; */
+
 }
 
-
-
 .choreCheckListItem {
-    border-bottom: 1px solid #ced4da;
+    border-bottom: 0px;
     width: 52%;
+    /* width: 22%; */
     margin-top: 0.5%;
     margin-left: 2%;
 }
 
 .choreCheckListCheckBox {
     margin-left: 1%;
+    margin-top: 1%;
+    
 }
 
 span:after{
@@ -47,7 +53,40 @@ span:after{
 #chore-list-button {
     margin-top: 8%;
     margin-left: 80%;
+    /* margin-left: 50%; */
+
 }
  #calendarHolder{
-     height: 400px;
+     height: 200px;
+     /* height: 400px; */
+     width: 1150px;
+    margin-left: 140px;
+    margin-top: 2%;
+    padding: 20px;
  }
+#addChoreForm {
+    margin-left: 4%;
+    bottom: 140px;
+    position: relative;
+}
+
+.table {
+    margin-left: 4%;
+    position: relative;
+    bottom: 120px;
+    
+    
+}
+.input-group {
+    margin-left: 18%;
+    font-weight: bold;
+    color: purple; 
+    font-size: 20px;
+   
+}   
+
+h2 {
+    background-color: 
+    #2d3e50;
+    color: white;
+}

@@ -1,44 +1,37 @@
 
 #levelONE {
-    position: relative;
-    left: 4vw;
-    bottom: 2vw;
-    background: url("levelONE.jpg");
-    width: 64px;
-    height: 62px;
-    background-size: cover;
+    /* position: relative; */
+    /* left: 4vw; */
+    /* bottom: 2vw; */
+    /* background: url("levelONE.jpg"); */
+    /* width: 64px; */
+    /* height: 62px; */
+    /* background-size: cover; */
 
 }
 #levelTWO {
-    position: relative;
-    left: 4vw;
-    bottom: 2vw;
-    background: url("levelTWO.jpg");
-    width: 64px;
-    height: 62px;
-    background-size: cover;
+    /* position: relative; */
+    /* left: 4vw; */
+    /* bottom: 2vw; */
+    /* background: url("levelTWO.jpg"); */
+    /* width: 64px; */
+    /* height: 62px; */
+    /* background-size: cover; */
 }
 #levelTHREE {
-    position: relative;
-    left: 4vw;
-    bottom: 2vw;
-    background: url("levelTHREE.jpg");
-    width: 64px;
-    height: 62px;
-    background-size: cover;
+    /* position: relative; */
+    /* left: 4vw; */
+    /* bottom: 2vw; */
+    /* background: url("levelTHREE.jpg"); */
+    /* width: 64px; */
+    /* height: 62px; */
+    /* background-size: cover; */
 }
 p1 {
-    position: relative;
-    top: 5vw;
-    left: 3px;
+    /* position: relative; */
+    /* left: 8px; */
     font-size: 14px;
-    
 }
-
-/**{
-    border-radius: 5px;
-    border: 1px solid blue;
-}*/
 
 #rewardForm {
     margin-left: 15%;
@@ -91,6 +84,9 @@ span:after{
     width: 134px;
     height: 130px;
     top: 8vw;
-    
     margin-left: 80%;
+}
+
+.input-group {
+    text-decoration: none;
 }
