@@ -42,10 +42,12 @@
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "^3.0.1",
+    "sass-loader": "^7.1.0"
   },
   "devDependencies": {
     "concurrently": "^4.1.1",
+    "nodemon": "^1.19.1",
     "css-loader": "^3.2.0",
     "style-loader": "^1.0.0"
   }
