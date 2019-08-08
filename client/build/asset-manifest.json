@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.17465ed0.chunk.css",
-    "main.js": "/static/js/main.36cedeab.chunk.js",
-    "main.js.map": "/static/js/main.36cedeab.chunk.js.map",
+    "main.css": "/static/css/main.f243df79.chunk.css",
+    "main.js": "/static/js/main.f81c7b54.chunk.js",
+    "main.js.map": "/static/js/main.f81c7b54.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.f2aaf8b6.chunk.js": "/static/js/2.f2aaf8b6.chunk.js",
-    "static/js/2.f2aaf8b6.chunk.js.map": "/static/js/2.f2aaf8b6.chunk.js.map",
+    "static/css/2.c26f480d.chunk.css": "/static/css/2.c26f480d.chunk.css",
+    "static/js/2.4e8ec34d.chunk.js": "/static/js/2.4e8ec34d.chunk.js",
+    "static/js/2.4e8ec34d.chunk.js.map": "/static/js/2.4e8ec34d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.de23e4e9935390c8bfefa7d3f7b55374.js": "/precache-manifest.de23e4e9935390c8bfefa7d3f7b55374.js",
+    "precache-manifest.4838654f47361ede45a3915e63f2d5fb.js": "/precache-manifest.4838654f47361ede45a3915e63f2d5fb.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.17465ed0.chunk.css.map": "/static/css/main.17465ed0.chunk.css.map",
-    "static/media/ChoreListandRewardList.css": "/static/media/bulletlist.2237c13b.jpg",
+    "static/css/2.c26f480d.chunk.css.map": "/static/css/2.c26f480d.chunk.css.map",
+    "static/css/main.f243df79.chunk.css.map": "/static/css/main.f243df79.chunk.css.map",
+    "static/media/AddChore.css": "/static/media/badge.79aae0f2.jpg",
     "static/media/NavTabs.css": "/static/media/bananapaper.9c030442.jpg",
-    "static/media/style.css": "/static/media/palmtree.ad9e07c4.png"
+    "static/media/RewardForm.css": "/static/media/bulletlist.2237c13b.jpg",
+    "static/media/RoleChoose.css": "/static/media/child1.cfc31a45.jpg",
+    "static/media/palmtree.png": "/static/media/palmtree.cd243261.png"
   }
 }
