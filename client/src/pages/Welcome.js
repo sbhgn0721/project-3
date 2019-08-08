@@ -12,15 +12,20 @@ class Welcome extends Component {
                     <br></br><br></br><br></br>
                     <h5>No one loves doing chores, especially children. In the 21st century children are playing or glued to their smart phones.
                     <br></br><br></br><strong>Welcome to Monkey See, Monkey 2DO!</strong><br></br>Our website will make it easier and more
-                            enjoyable for children when they can complete their chores without parental pressure. Once chores are finished, children
+                                enjoyable for children when they can complete their chores without parental pressure. Once chores are finished, children
                     will be rewarded for their accomplishments.</h5>
-                    
-                    <a href="/parent/" className="btn btn-primary" id="parentPage-button">If you are a parent, click here!</a>
-                    
-                    
-                    <a href="/child/" className="btn btn-success" id="childPage-button">If you are a child, click here!</a>
-                    
-                    
+
+                    <div id="parent-child-buttons">
+                        <div>
+                            <a href="/parent/" className="btn btn-primary"  id="parent-button" >Parent</a>
+                        </div>
+
+                        <div >
+
+                            <a href="/child/" className="btn btn-success" id="child-button">Child</a>
+
+                        </div>
+                    </div>
 
 
                 </div>

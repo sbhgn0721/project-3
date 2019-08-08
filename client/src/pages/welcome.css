@@ -12,25 +12,39 @@ h5 {
     height: 270px;
 }
 
-
-#parentPage-button {
-    margin-top: 21%;
-    margin-left: 5%;
-    color: black;
+#parent-child-buttons {
+    width:200%;
+}
+#parent-button {
+    background: url("../components/RoleChoose/parents.jpg");
+    position: relative;
+    top: 10vw;
+    left: 50vw;
+    width: 134px;
+    height: 130px;
+    background-size: cover;
+    color: purple;
     text-align: center;
     font-weight: bold;
+    font-size: 120%;
+   
     
    
     
 }
 
-#childPage-button {
-    margin-left: 30%;
-    margin-top: -18%;
-    color: black;
-    text-align: center;
+#child-button {
+    background: url("../components//RoleChoose/child1.jpg");
+    position: relative;
+    width: 133px;
+    height: 130px;
+    left: 75vw;
+    top: 0.8vw;
+    background-size: cover;
+    color: purple;
+    text-align: middle;
     font-weight: bold;
-
-    
-    
+    font-size: 120%;
+  
 }
+
