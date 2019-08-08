@@ -16,7 +16,6 @@ class Welcome extends Component {
 
 
                 </div>
-                {/* <img src = "../../public/images/palmtree.png" alt="attempt from Welcome component"></img> */}
                 <Tree />
             </div>
 

@@ -6,12 +6,11 @@
     width: 134px;
     height: 130px;
     background-size: cover;
-
 }
 
 #rewardList-button {
     position: relative;
-    left: 31vw;
+    left: 32vw;
     top: 15vw;
     background: url("badge.jpg");
     background-size: cover;
@@ -19,13 +18,20 @@
     height: 130px;
     margin-top: 150px;
     margin-left: 50px;
+    
 }
 
-.parentButton {
-
+p1{
     position: relative;
     top: 9vh;
     color: black;
-
     font-weight: bold;
+}
+
+#reward-list-button {
+    background: url ("")
+}
+
+#addChoreForm {
+    margin-left: 5%;
 }
