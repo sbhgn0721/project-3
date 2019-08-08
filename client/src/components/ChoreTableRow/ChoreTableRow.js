@@ -17,7 +17,7 @@ const ChoreTableRow = props => {
                                 <td className="tableIndex"><strong>{index + 1}</strong></td>
                                 <td className="tableChoreName">{item.choreName}</td>
                                 <td className="tableChoreLevel">{item.level}</td>
-                                <td className="tableChoreDueDate">{Moment(item.dueDate).utc().format('YYYY-MM-DD')}</td>
+                                <td className="tableChoreDueDate">{Moment(item.dueDate).utc().format('MM-DD-YYYY')}</td>
                                 <td className="tableEditBtn"><button data-toggle="modal" data-target="#editChore" id="editPenBtn" onClick={() => props.loadChoreModal(item)}><i className="fas fa-pen" ></i></button></td>
                                 <td className="tableDeleteBtn"><button id={item._id} onClick={() => props.handleDeleteChore(item._id)}><i className="fas fa-trash-alt"></i></button></td>
                             </tr>
