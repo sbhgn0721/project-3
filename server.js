@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const routes = require("./routes");
+const path = require('path');
 const PORT = process.env.PORT || 3001;
 
 const app = express()
@@ -13,6 +14,8 @@ app.use(bodyParser.json());
 
 // DB Config
 const db = require("./config/keys").dbURI;
+
+// mongoose.Promise = Promise;
 
 // Connect to MongoDB
 mongoose
@@ -38,7 +41,7 @@ app.get("*", function(req, res) {
 });
 
 
-app.listen(port, () => console.log(`Server up and running on port ${PORT} !`));
+app.listen(PORT, () => console.log(`Server up and running on port ${PORT} !`));
 
 
 // //// replacing in favor of bodyParser - false
