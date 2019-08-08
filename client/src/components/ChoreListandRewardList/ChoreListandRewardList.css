@@ -22,7 +22,6 @@
 }
 
 p1{
-    
     position: relative;
     top: 9vh;
     color: black;
@@ -33,3 +32,6 @@ p1{
     background: url ("")
 }
 
+#addChoreForm {
+    margin-left: 5%;
+}
