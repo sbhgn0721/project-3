@@ -10,7 +10,7 @@ const RewardForm = props => {
             <form id="rewardForm">
                 <div className="form-group form-row">
                     <div className="col-auto">
-                        <label id="levelONE" htmlFor="level1Reward"><p1><strong>Level 1</strong></p1></label>
+                        <label id="levelONE" htmlFor="level1Reward"><strong>Level 1 Reward</strong></label>
                     </div>
                     <div className="col-8">
                         <input type="text" className="form-control rewardFormInput" id="level1Reward"
@@ -42,7 +42,7 @@ const RewardForm = props => {
 
                 <div className="form-group form-row" id="level2RewardRow">
                     <div className="col-auto">
-                        <label id="levelTWO" htmlFor="level2Reward"><p1><strong>Level 2 Reward</strong></p1></label>
+                        <label id="levelTWO" htmlFor="level2Reward"><strong>Level 2 Reward</strong></label>
                     </div>
                     <div className="col-8">
                         <input type="text" className="form-control rewardFormInput" id="level2Reward"
@@ -74,7 +74,7 @@ const RewardForm = props => {
 
                 <div className="form-group form-row" id="level3RewardRow">
                     <div className="col-auto">
-                        <label id="levelTHREE" htmlFor="level3Reward"><p1><strong>Level 3 Reward</strong></p1></label>
+                        <label id="levelTHREE" htmlFor="level3Reward"><strong>Level 3 Reward</strong></label>
                     </div>
                     <div className="col-8">
                         <input type="text" className="form-control rewardFormInput" id="level3Reward"
