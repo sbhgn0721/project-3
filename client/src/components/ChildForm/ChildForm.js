@@ -11,7 +11,7 @@ const ChildForm = props => {
             <form id="childForm">
                 <div className="form-group form-row">
                     <div className="col-auto">
-                        <label htmlFor="level1Reward">Level 1 Reward</label>
+                        <label htmlFor="level1Reward"><strong>Level 1 Reward</strong></label>
                     </div>
                     <div className="col-8">
                         <input type="text" className="form-control rewardFormInput" id="level1Reward"
@@ -31,7 +31,7 @@ const ChildForm = props => {
                                     checked={item.completion} name={item.choreName} level={item.level} duedate={item.dueDate} id={item._id} readOnly
                                 />
 
-                                <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).utc().format('YYYY-MM-DD')}</span></p>
+                                <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).utc().format('MM-DD-YYYY')}</span></p>
                             </div>
                         </div>)
                 })}
@@ -39,7 +39,7 @@ const ChildForm = props => {
 
                 <div className="form-group form-row" id="level2RewardRow">
                     <div className="col-auto">
-                        <label htmlFor="level2Reward">Level 2 Reward</label>
+                        <label htmlFor="level2Reward"><strong>Level 2 Reward</strong></label>
                     </div>
                     <div className="col-8">
                         <input type="text" className="form-control rewardFormInput" id="level2Reward"
@@ -57,7 +57,7 @@ const ChildForm = props => {
                                 <input type="checkbox" className="choreCheckListCheckBox" aria-label="Checkbox for following text input"
                                     checked={item.completion} name={item.choreName} level={item.level} duedate={item.dueDate} id={item._id} readOnly
                                 />
-                                <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).utc().format('YYYY-MM-DD')}</span></p>
+                                <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).utc().format('MM-DD-YYYY')}</span></p>
                             </div>
                         </div>)
                 })}
@@ -66,7 +66,7 @@ const ChildForm = props => {
 
                 <div className="form-group form-row" id="level3RewardRow">
                     <div className="col-auto">
-                        <label htmlFor="level3Reward">Level 3 Reward</label>
+                        <label htmlFor="level3Reward"><strong>Level 3 Reward</strong></label>
                     </div>
                     <div className="col-8">
                         <input type="text" className="form-control rewardFormInput" id="level3Reward"
@@ -84,7 +84,7 @@ const ChildForm = props => {
                                 <input type="checkbox" className="choreCheckListCheckBox" aria-label="Checkbox for following text input"
                                     checked={item.completion} name={item.choreName} level={item.level} duedate={item.dueDate} id={item._id} readOnly
                                 />
-                                <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).utc().format('YYYY-MM-DD')}</span></p>
+                                <p className="choreCheckListItem"><span>{item.choreName}</span>  <span></span> <span>{Moment(item.dueDate).utc().format('MM-DD-YYYY')}</span></p>
                             </div>
                         </div>)
                 })}
