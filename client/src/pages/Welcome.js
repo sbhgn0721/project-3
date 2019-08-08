@@ -15,12 +15,13 @@ class Welcome extends Component {
                             enjoyable for children when they can complete their chores without parental pressure. Once chores are finished, children
                     will be rewarded for their accomplishments.</h5>
                     
+                    {/*
                     <a href="/parent/" className="btn btn-primary" id="parentPage-button">If you are a parent, click here!</a>
                     
                     
                     <a href="/child/" className="btn btn-success" id="childPage-button">If you are a child, click here!</a>
                     
-                    
+                    */}
 
 
                 </div>
