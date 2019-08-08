@@ -12,7 +12,7 @@ function NavTabs(props) {
 
     return (
         <nav className="navbar navbar-dark fixed-top">
-            <Link className="navbar-brand" to="/">
+            <Link className="navbar-brand" to="/role">
                 <p className="logo">Monkey See, Monkey 2 Do</p>
           </Link>
 
