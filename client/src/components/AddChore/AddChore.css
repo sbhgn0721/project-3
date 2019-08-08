@@ -7,28 +7,10 @@ margin-left: 20px;
 }
 
 #save-button {
-    background: url("bulletlist.jpg");
-    background-size: cover;
-    width: 134px;
-    height: 130px;
-    margin-left: 700px;
+ margin-left: 700px;
 }
 
 #addChoreForm {
     width: 40%;
     margin-left: 20px;
-}
-
-#reward-list-button {
-    background: url("./badge.jpg");
-    background-size: cover;
-    width: 134px;
-    height: 130px;
-}
-
-
-p2 {
-    position: relative;
-    top: 6vw; 
-    color: black;   
 }

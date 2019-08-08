@@ -6,7 +6,7 @@ function Tree(props) {
 // return <img src="palmtree.png" alt="Tree" />
 return (
 <div>
-    <img id="tree"src={palmtree} alt="Tree" />
+    <img src={palmtree} alt="Tree" />
 </div>
 )
 }
