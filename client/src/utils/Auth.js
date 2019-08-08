@@ -33,7 +33,7 @@ class Auth {
   }
 
   isAuthenticated() {
-    return new Date().getTime() < this.test;
+    return new Date().getTime() < localStorage.test;
   }
 
   signIn() {
@@ -59,7 +59,7 @@ class Auth {
     this.profile = authResult.idTokenPayload;
     // set the time that the id token will expire at
     this.expiresAt = new Date().getTime()+authResult.expiresIn*1000;
-    this.test = this.expiresAt;
+    localStorage.test= this.expiresAt;
   }
 
   signOut() {
